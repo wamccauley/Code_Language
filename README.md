@@ -15,3 +15,5 @@ Note: This project is a bunch of personal notes. While you may find them useful,
 Feel free to explore each section and make use of the information as needed. If you have any suggestions or contributions, please don't hesitate to create a pull request or open an issue.
 
 And don't forget to take notes! ❤️
+
+Version: 1.0.3
