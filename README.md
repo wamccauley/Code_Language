@@ -1,14 +1,13 @@
 # Code-Memo
 
-Welcome to my Code Memo! I forget a lot!! So I created this repository, which is a collection of my notes on various programming topics, including Python, Django, Django REST Framework (DRF), algorithms and data structures (maybe some leetcode problems), and Linux. This serves as my personal reference to consolidate everything I have learned and to help me recall concepts quickly. I hope you find it useful as well.
+Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a lot!! So I created this repository, which is a collection of my notes on various programming topics, including Python, Django, Django REST Framework (DRF), algorithms and data structures (maybe some leetcode problems), and Linux. This serves as my personal reference to consolidate everything I have learned and to help me recall concepts quickly. I hope you find it useful as well.
 
 ## Table of Contents
 
-1. [Python](#python)
-2. [Django](#django)
-3. [Django REST Framework (DRF)](#django-rest-framework-drf)
-4. [Data Structures and Algorithms](#dsa)
-5. [Linux](#linux)
+1. [Python](/python.md)
+2. [Django and Django REST Framework (DRF)](#django)
+4. [Data Structures and Algorithms](/dsa.md)
+5. [Linux](/linux.md)
 
 
 Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)
