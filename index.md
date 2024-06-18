@@ -10,6 +10,7 @@ Welcome to my Code Memo! I forget a lot!! So I created this repository, which is
 4. [Algorithms and Data Structures](#algorithms-and-data-structures)
 5. [Linux](#linux)
 
+
 Feel free to explore each section and make use of the information as needed. If you have any suggestions or contributions, please don't hesitate to create a pull request or open an issue.
 
 And don't forget to take notes!
