@@ -750,3 +750,76 @@ RewriteRule ^.*$ - [NC,L]
 
 RewriteRule ^(.*) /index.html [NC,L]
 ```
+
+
+### Fixing Django Cannot Connect to MySQL
+1. Check MySQL Service
+```sh
+sudo systemctl start mysql
+```
+
+2. Allow MySQL Port Through Firewall
+```sh
+sudo ufw allow 3306
+```
+
+3. Configure MySQL
+
+Edit the MySQL configuration file `/etc/mysql/my.cnf` to ensure it accepts connections:
+
+Configuration Steps:
+- Ensure the port is set to 3306:
+  ```ini
+  port = 3306
+  ```
+- Adjust the `bind-address` setting:
+  - To accept connections from localhost:
+    ```ini
+    bind-address = 127.0.0.1
+    ```
+  - To accept remote connections, you might set it to `0.0.0.0` or your server’s specific IP address:
+    ```ini
+    bind-address = 0.0.0.0
+    ```
+
+4. Check Network
+
+Ensure that the network is working correctly:
+```sh
+ping localhost
+```
+
+5. Create MySQL User and Grant Permissions
+
+Create a MySQL user, grant necessary permissions, and allow connections from the backend server's IP address:
+
+Steps to Create a MySQL User and Grant Permissions:
+
+1. Log in to MySQL as the root user:
+   ```sh
+   sudo mysql -u root -p
+   ```
+
+2. Create a new user and grant privileges:
+   ```sql
+   CREATE USER 'django_user'@'backend_server_ip' IDENTIFIED BY 'strong_password';
+   GRANT ALL PRIVILEGES ON your_database.* TO 'django_user'@'backend_server_ip';
+   FLUSH PRIVILEGES;
+   ```
+
+Example Commands:
+
+- Create a user:
+  ```sql
+  CREATE USER 'django_user'@'backend_server_ip' IDENTIFIED BY 'strong_password';
+  ```
+
+- Grant all privileges to the user on a specific database:
+  ```sql
+  GRANT ALL PRIVILEGES ON your_database.* TO 'django_user'@'backend_server_ip';
+  ```
+
+- Apply the changes:
+  ```sql
+  FLUSH PRIVILEGES;
+  ```
