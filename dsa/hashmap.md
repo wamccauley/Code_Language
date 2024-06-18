@@ -164,11 +164,14 @@ class HashMap:
             if key == k:
                 return v
         return None
+```
 
 # Usage
+```python
 hash_map = HashMap()
 hash_map.insert("apple", 1)
 hash_map.insert("banana", 2)
 print(hash_map.lookup("apple"))  # Output: 1
 hash_map.delete("banana")
 print(hash_map.lookup("banana"))  # Output: None
+```

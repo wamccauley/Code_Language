@@ -7,9 +7,14 @@ Welcome to my Code Memo! I forget a lot!! So I created this repository, which is
 1. [Python](#python)
 2. [Django](#django)
 3. [Django REST Framework (DRF)](#django-rest-framework-drf)
-4. [Algorithms and Data Structures](#algorithms-and-data-structures)
+4. [Data Structures and Algorithms](/dsa.md)
 5. [Linux](#linux)
+
+
+Note: This project is a bunch of my personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)
 
 Feel free to explore each section and make use of the information as needed. If you have any suggestions or contributions, please don't hesitate to create a pull request or open an issue.
 
-And don't forget to take notes!
+And don't forget to take notes! ❤️
+
+Version: 1.0.1
