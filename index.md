@@ -4,10 +4,10 @@ Welcome to my Code Memo! I forget a lot!! So I created this repository, which is
 
 ## Table of Contents
 
-1. [Python](#python)
+1. [Python](/python.md)
 2. [Django and Django REST Framework (DRF)](#django)
 4. [Data Structures and Algorithms](/dsa.md)
-5. [Linux](#linux)
+5. [Linux](/linux.md)
 
 
 Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)

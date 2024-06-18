@@ -7,7 +7,7 @@ Welcome to my Code Memo! I forget a lot!! So I created this repository, which is
 1. [Python](#python)
 2. [Django](#django)
 3. [Django REST Framework (DRF)](#django-rest-framework-drf)
-4. [Data Structures and Algorithms](/dsa.md)
+4. [Data Structures and Algorithms](#dsa)
 5. [Linux](#linux)
 
 
