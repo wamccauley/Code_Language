@@ -752,7 +752,7 @@ RewriteRule ^(.*) /index.html [NC,L]
 ```
 
 
-### Fixing Django Cannot Connect to MySQL
+## Fixing Django Cannot Connect to MySQL
 1. Check MySQL Service
 ```sh
 sudo systemctl start mysql
