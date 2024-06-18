@@ -600,7 +600,7 @@ The Linux file system hierarchy is designed to keep the system organized and eff
 Understanding this hierarchy is crucial for effective system administration, troubleshooting, and maintaining a Linux system.
 
 
-# Random Notes
+# Random Notes (May not be Linux related)
 
 ## Connecting via SSH
 
