@@ -842,7 +842,7 @@ Docker Swarm is a native clustering and orchestration tool for Docker containers
   ```
 
 
-# Git: A Comprehensive Guide
+# Git:
 
 Git is a distributed version control system used for tracking changes in source code during software development. This guide will cover how to install Git, generate SSH keys to connect to a GitHub account, and explain essential Git commands.
 
