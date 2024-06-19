@@ -600,6 +600,461 @@ The Linux file system hierarchy is designed to keep the system organized and eff
 Understanding this hierarchy is crucial for effective system administration, troubleshooting, and maintaining a Linux system.
 
 
+# Docker
+
+Docker is a platform that allows you to develop, ship, and run applications in containers. Containers are lightweight, portable, and ensure consistency across multiple environments.
+
+## Installing Docker
+
+### Windows
+
+1. **Download Docker Desktop:**
+   - Go to the [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop) page.
+   - Download the Docker Desktop installer.
+
+2. **Install Docker Desktop:**
+   - Run the installer and follow the instructions.
+   - During the installation, ensure that the option to use WSL 2 (Windows Subsystem for Linux) is selected for better performance.
+
+3. **Start Docker Desktop:**
+   - Once installed, launch Docker Desktop from the Start menu.
+   - Verify the installation by opening a Command Prompt or PowerShell and running:
+     ```shell
+     docker --version
+     ```
+
+### macOS
+
+1. **Download Docker Desktop:**
+   - Go to the [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop) page.
+   - Download the Docker Desktop installer.
+
+2. **Install Docker Desktop:**
+   - Open the downloaded `.dmg` file and drag the Docker icon to the Applications folder.
+
+3. **Start Docker Desktop:**
+   - Launch Docker Desktop from the Applications folder.
+   - Verify the installation by opening a terminal and running:
+     ```shell
+     docker --version
+     ```
+
+### Linux
+
+1. **Install Docker Engine:**
+   - For Debian-based distributions (e.g., Ubuntu):
+     ```shell
+     sudo apt-get update
+     sudo apt-get install \
+         ca-certificates \
+         curl \
+         gnupg \
+         lsb-release
+
+     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+     echo \
+       "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+       $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+     sudo apt-get update
+     sudo apt-get install docker-ce docker-ce-cli containerd.io
+     ```
+
+   - For Red Hat-based distributions (e.g., CentOS):
+     ```shell
+     sudo yum install -y yum-utils
+     sudo yum-config-manager \
+         --add-repo \
+         https://download.docker.com/linux/centos/docker-ce.repo
+     sudo yum install docker-ce docker-ce-cli containerd.io
+     ```
+
+2. **Start Docker:**
+   ```shell
+   sudo systemctl start docker
+   sudo systemctl enable docker
+   ```
+
+3. **Verify the installation:**
+   ```shell
+   docker --version
+   ```
+
+## Basic Docker Commands
+
+- **Pull an image from Docker Hub:**
+  ```shell
+  docker pull <image_name>
+  ```
+  Example:
+  ```shell
+  docker pull nginx
+  ```
+
+- **Run a container:**
+  ```shell
+  docker run -d -p <host_port>:<container_port> <image_name>
+  ```
+  Example:
+  ```shell
+  docker run -d -p 80:80 nginx
+  ```
+
+- **List running containers:**
+  ```shell
+  docker ps
+  ```
+
+- **Stop a running container:**
+  ```shell
+  docker stop <container_id>
+  ```
+
+- **Remove a container:**
+  ```shell
+  docker rm <container_id>
+  ```
+
+- **List all images:**
+  ```shell
+  docker images
+  ```
+
+- **Remove an image:**
+  ```shell
+  docker rmi <image_id>
+  ```
+
+## Dockerfile
+
+A Dockerfile is a script that contains a series of instructions on how to build a Docker image.
+
+### Example Dockerfile
+
+```dockerfile
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+```
+
+### Building and Running a Docker Image
+
+1. **Build the Docker image:**
+   ```shell
+   docker build -t <your_image_name> .
+   ```
+
+2. **Run the Docker container:**
+   ```shell
+   docker run -p 4000:80 <your_image_name>
+   ```
+
+## Docker Compose
+
+Docker Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services.
+
+### Example `docker-compose.yml`
+
+```yaml
+version: '3'
+services:
+  web:
+    image: my_web_app
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_ENV: development
+  redis:
+    image: "redis:alpine"
+```
+
+### Using Docker Compose
+
+1. **Start the application:**
+   ```shell
+   docker-compose up
+   ```
+
+2. **Stop the application:**
+   ```shell
+   docker-compose down
+   ```
+
+## Advanced Docker Concepts
+
+### Networking
+
+- **Creating a network:**
+  ```shell
+  docker network create <network_name>
+  ```
+
+- **Connecting a container to a network:**
+  ```shell
+  docker network connect <network_name> <container_name>
+  ```
+
+### Volumes
+
+- **Creating a volume:**
+  ```shell
+  docker volume create <volume_name>
+  ```
+
+- **Mounting a volume to a container:**
+  ```shell
+  docker run -d -v <volume_name>:/path/in/container <image_name>
+  ```
+
+### Docker Swarm
+
+Docker Swarm is a native clustering and orchestration tool for Docker containers.
+
+- **Initialize a Swarm:**
+  ```shell
+  docker swarm init
+  ```
+
+- **Deploy a stack:**
+  ```shell
+  docker stack deploy -c <compose-file> <stack_name>
+  ```
+
+
+# Git: A Comprehensive Guide
+
+Git is a distributed version control system used for tracking changes in source code during software development. This guide will cover how to install Git, generate SSH keys to connect to a GitHub account, and explain essential Git commands.
+
+## Installing Git
+
+### Windows
+
+1. **Download Git for Windows:**
+   - Go to the [Git for Windows](https://gitforwindows.org/) page.
+   - Download the Git installer.
+
+2. **Install Git:**
+   - Run the installer and follow the instructions.
+   - During the installation, it’s recommended to select "Use Git from the Windows Command Prompt" and other default settings.
+
+3. **Verify the installation:**
+   - Open Command Prompt or PowerShell and run:
+     ```shell
+     git --version
+     ```
+
+### macOS
+
+1. **Install Git:**
+   - Git can be installed via Homebrew. First, install Homebrew if you haven’t already:
+     ```shell
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+     ```
+   - Then, install Git using Homebrew:
+     ```shell
+     brew install git
+     ```
+
+2. **Verify the installation:**
+   - Open a terminal and run:
+     ```shell
+     git --version
+     ```
+
+### Linux
+
+1. **Install Git:**
+   - For Debian-based distributions (e.g., Ubuntu):
+     ```shell
+     sudo apt update
+     sudo apt install git
+     ```
+   - For Red Hat-based distributions (e.g., CentOS):
+     ```shell
+     sudo yum install git
+     ```
+
+2. **Verify the installation:**
+   - Open a terminal and run:
+     ```shell
+     git --version
+     ```
+
+## Setting Up SSH Keys for GitHub
+
+1. **Generate an SSH key:**
+   - Open a terminal and run:
+     ```shell
+     ssh-keygen -t ed25519 -C "your_email@example.com"
+     ```
+   - When prompted to "Enter a file in which to save the key," press Enter to accept the default file location.
+   - Enter and confirm a secure passphrase.
+
+2. **Start the SSH agent:**
+   - Run the following command to start the SSH agent in the background:
+     ```shell
+     eval "$(ssh-agent -s)"
+     ```
+
+3. **Add your SSH key to the SSH agent:**
+   - Run the following command to add your SSH key:
+     ```shell
+     ssh-add ~/.ssh/id_ed25519
+     ```
+
+4. **Add the SSH key to your GitHub account:**
+   - Copy the SSH key to your clipboard:
+     ```shell
+     cat ~/.ssh/id_ed25519.pub
+     ```
+   - Log in to your GitHub account and go to **Settings** > **SSH and GPG keys** > **New SSH key**.
+   - Paste your SSH key into the "Key" field and give it a descriptive title.
+   - Click **Add SSH key**.
+
+## Essential Git Commands
+
+### Configuration
+
+- **Set your username:**
+  ```shell
+  git config --global user.name "Your Name"
+  ```
+
+- **Set your email:**
+  ```shell
+  git config --global user.email "your_email@example.com"
+  ```
+
+- **Check your configuration:**
+  ```shell
+  git config --list
+  ```
+
+### Creating a Repository
+
+- **Initialize a new repository:**
+  ```shell
+  git init
+  ```
+
+- **Clone an existing repository:**
+  ```shell
+  git clone <repository_url>
+  ```
+
+### Basic Commands
+
+- **Check the status of your repository:**
+  ```shell
+  git status
+  ```
+
+- **Add changes to the staging area:**
+  ```shell
+  git add <file_name>
+  ```
+  - To add all changes:
+    ```shell
+    git add .
+    ```
+
+- **Commit changes:**
+  ```shell
+  git commit -m "Commit message"
+  ```
+
+- **View commit history:**
+  ```shell
+  git log
+  ```
+
+### Branching and Merging
+
+- **Create a new branch:**
+  ```shell
+  git branch <branch_name>
+  ```
+
+- **Switch to a branch:**
+  ```shell
+  git checkout <branch_name>
+  ```
+
+- **Create and switch to a new branch:**
+  ```shell
+  git checkout -b <branch_name>
+  ```
+
+- **Merge a branch into the current branch:**
+  ```shell
+  git merge <branch_name>
+  ```
+
+- **Delete a branch:**
+  ```shell
+  git branch -d <branch_name>
+  ```
+
+### Remote Repositories
+
+- **Add a remote repository:**
+  ```shell
+  git remote add origin <repository_url>
+  ```
+
+- **View remote repositories:**
+  ```shell
+  git remote -v
+  ```
+
+- **Push changes to a remote repository:**
+  ```shell
+  git push origin <branch_name>
+  ```
+
+- **Pull changes from a remote repository:**
+  ```shell
+  git pull origin <branch_name>
+  ```
+
+### Undoing Changes
+
+- **Unstage a file:**
+  ```shell
+  git reset <file_name>
+  ```
+
+- **Revert changes in a file:**
+  ```shell
+  git checkout -- <file_name>
+  ```
+
+- **Amend the last commit:**
+  ```shell
+  git commit --amend
+  ```
+
 # Random Notes
 Some of these random notes might not be Linux related.
 
