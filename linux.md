@@ -1055,6 +1055,217 @@ Git is a distributed version control system used for tracking changes in source 
   git commit --amend
   ```
 
+
+# How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu
+
+Check out the [full tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu).
+
+This guide details the process of setting up a Django application with PostgreSQL, Nginx, and Gunicorn on Ubuntu 22.04. It covers installing necessary packages, configuring PostgreSQL, setting up Django, and configuring Gunicorn and Nginx for production deployment.
+
+## Prerequisites
+
+- Server running Ubuntu with a non-root user with sudo privileges and an active firewall.
+- Upgrade to a supported Ubuntu version if using 16.04 or below.
+
+## Steps to Setup Django, Nginx & Gunicorn
+
+### Step 1 — Install Packages from the Ubuntu Repositories
+
+```bash
+sudo apt update
+sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib nginx curl
+```
+
+### Step 2 — Create the PostgreSQL Database and User
+
+```bash
+sudo -u postgres psql
+CREATE DATABASE myproject;
+CREATE USER myprojectuser WITH PASSWORD 'password';
+ALTER ROLE myprojectuser SET client_encoding TO 'utf8';
+ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE myprojectuser SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
+\q
+```
+
+### Step 3 — Create a Python Virtual Environment for Your Project
+
+```bash
+mkdir ~/myprojectdir
+cd ~/myprojectdir
+python3 -m venv myprojectenv
+source myprojectenv/bin/activate
+pip install django gunicorn psycopg2-binary
+```
+
+### Step 4 — Create and Configure a New Django Project
+
+```bash
+django-admin startproject myproject ~/myprojectdir
+nano ~/myprojectdir/myproject/settings.py
+```
+
+- Modify `ALLOWED_HOSTS`:
+
+```python
+ALLOWED_HOSTS = ['your_server_domain_or_IP', 'second_domain_or_IP', 'localhost']
+```
+
+- Update `DATABASES`:
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
+
+- Set `STATIC_ROOT`:
+
+```python
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+```
+
+### Step 5 — Complete Initial Project Setup
+
+```bash
+~/myprojectdir/manage.py makemigrations
+~/myprojectdir/manage.py migrate
+~/myprojectdir/manage.py createsuperuser
+~/myprojectdir/manage.py collectstatic
+sudo ufw allow 8000
+~/myprojectdir/manage.py runserver 0.0.0.0:8000
+```
+
+### Step 6 — Test Gunicorn’s Ability to Serve the Project
+
+```bash
+cd ~/myprojectdir
+gunicorn --bind 0.0.0.0:8000 myproject.wsgi
+deactivate
+```
+
+### Step 7 — Create systemd Socket and Service Files for Gunicorn
+
+- Create Gunicorn socket file:
+
+```bash
+sudo nano /etc/systemd/system/gunicorn.socket
+```
+
+Add:
+
+```ini
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
+```
+
+- Create Gunicorn service file:
+
+```bash
+sudo nano /etc/systemd/system/gunicorn.service
+```
+
+Add:
+
+```ini
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=sammy
+Group=www-data
+WorkingDirectory=/home/sammy/myprojectdir
+ExecStart=/home/sammy/myprojectdir/myprojectenv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          myproject.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl start gunicorn.socket
+sudo systemctl enable gunicorn.socket
+```
+
+### Step 8 — Check for the Gunicorn Socket File
+
+```bash
+sudo systemctl status gunicorn.socket
+file /run/gunicorn.sock
+sudo journalctl -u gunicorn.socket
+```
+
+### Step 9 — Test Socket Activation
+
+```bash
+curl --unix-socket /run/gunicorn.sock localhost
+sudo systemctl status gunicorn
+sudo journalctl -u gunicorn
+sudo systemctl daemon-reload
+sudo systemctl restart gunicorn
+```
+
+### Step 10 — Configure Nginx to Proxy Pass to Gunicorn
+
+- Create Nginx server block:
+
+```bash
+sudo nano /etc/nginx/sites-available/myproject
+```
+
+Add:
+
+```nginx
+server {
+    listen 80;
+    server_name server_domain_or_IP;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/sammy/myprojectdir;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+}
+```
+
+- Enable the Nginx server block:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl restart nginx
+sudo ufw delete allow 8000
+sudo ufw allow 'Nginx Full'
+```
+
+By following these steps, you will have a fully functional Django application served with PostgreSQL, Gunicorn, and Nginx on Ubuntu.
+
+
+
 # Random Notes
 Some of these random notes might not be Linux related.
 
