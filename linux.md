@@ -823,3 +823,27 @@ Example Commands:
   ```sql
   FLUSH PRIVILEGES;
   ```
+
+## Reverse Proxy
+
+- **Reverse Proxy**:
+  - Sits between client devices and a web server.
+  - Intercepts requests from clients and forwards them to the web server.
+  - Benefits include:
+    - Load balancing.
+    - Enhanced security (hides the identity and characteristics of the backend server).
+    - SSL termination (handles SSL encryption/decryption to reduce the load on backend servers).
+    - Caching (improves performance by serving cached content for repeated requests).
+
+## Load Balancer
+
+- **Load Balancer**:
+  - Distributes incoming network or application traffic across multiple servers.
+
+## Scaling
+
+- **Vertical Scaling**:
+  - Involves adding more CPU and RAM to a single server.
+
+- **Horizontal Scaling**:
+  - Involves adding more servers and using a load balancer to distribute the load.
