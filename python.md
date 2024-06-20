@@ -9,6 +9,7 @@ Managing dependencies is crucial for ensuring that your Python projects run smoo
 ### Windows
 
 1. **Download get-pip.py:**
+
    - Open a web browser and navigate to the [get-pip.py](https://bootstrap.pypa.io/get-pip.py) page.
    - Right-click on the page and select "Save As" to save the file to your preferred location.
 
@@ -27,6 +28,7 @@ Managing dependencies is crucial for ensuring that your Python projects run smoo
 ### macOS
 
 1. **Ensure Python is installed:**
+
    - macOS comes with Python pre-installed. However, it is recommended to use `brew` to install the latest version.
    - Install Homebrew if you haven't already:
      ```shell
@@ -46,6 +48,7 @@ Managing dependencies is crucial for ensuring that your Python projects run smoo
 ### Linux
 
 1. **Ensure Python is installed:**
+
    - Most Linux distributions come with Python pre-installed. You can check if Python is installed by running:
      ```shell
      python3 --version
@@ -73,6 +76,7 @@ Using a virtual environment is a good practice to manage dependencies for differ
 ### Creating a Virtual Environment
 
 1. **Navigate to your project directory:**
+
    ```shell
    cd /path/to/your/project
    ```
@@ -86,6 +90,7 @@ Using a virtual environment is a good practice to manage dependencies for differ
 ### Activating the Virtual Environment
 
 - **Windows:**
+
   ```shell
   venv\Scripts\activate
   ```
@@ -100,6 +105,7 @@ You should see the name of your virtual environment in the terminal prompt, indi
 ### Deactivating the Virtual Environment
 
 To deactivate the virtual environment, simply run:
+
 ```shell
 deactivate
 ```
@@ -111,24 +117,26 @@ Dependencies for a project are typically listed in a `requirements.txt` file.
 ### Creating a `requirements.txt` File
 
 To generate a `requirements.txt` file for your project, run:
+
 ```shell
 pip freeze > requirements.txt
 ```
+
 This command lists all the installed packages and their versions and saves them to `requirements.txt`.
 
 ### Installing Dependencies from `requirements.txt`
 
 To install the dependencies listed in `requirements.txt`, ensure your virtual environment is activated, then run:
+
 ```shell
 pip install -r requirements.txt
 ```
 
-
-## Python Random Concepts
+## Python Random Notes
 
 ### Data Types
 
-- **Decimal**: 
+- **Decimal**:
   - Exact and no rounding.
   - Can hold bigger numbers.
   - Slower compared to floating-point numbers.
@@ -137,9 +145,11 @@ pip install -r requirements.txt
 ### Function Handling
 
 - **Overriding**:
+
   - Redefining a function from the superclass in the subclass.
 
 - **Overloading**:
+
   - Defining multiple functions with the same name but different parameters within the same class.
 
 - **Overwriting**:
@@ -155,6 +165,7 @@ pip install -r requirements.txt
 ### Special Files and Statements
 
 - **`__init__.py`**:
+
   - Used in modules and modular apps.
   - Contains initial configurations and imports.
 
@@ -162,15 +173,17 @@ pip install -r requirements.txt
   - Checks if the script is being run directly or imported.
   - Commonly used for running Python apps from the CLI with arguments.
 
-### Functions with *args and **kwargs
+### Functions with \*args and \*\*kwargs
 
 - **`*args`**:
+
   - Allows a function to accept any number of positional arguments.
 
-- **`**kwargs`**:
+- **`**kwargs`\*\*:
   - Allows a function to accept any number of keyword arguments.
 
 Example:
+
 ```python
 class MyClass:
     def my_function(self, *args, **kwargs):
@@ -199,6 +212,7 @@ obj.my_function()                          # No parameters or unsupported parame
   - Add functionality to a function without modifying its code.
 
 Example:
+
 ```python
 import time
 
