@@ -6,9 +6,8 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 
 1. [Python](/python.md)
 2. [Django and Django REST Framework (DRF)](#django)
-4. [Data Structures and Algorithms](/dsa.md)
-5. [Linux](/linux.md)
-
+3. [Data Structures and Algorithms](/dsa.md)
+4. [Linux](/linux.md)
 
 Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)
 
@@ -16,4 +15,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 1.0.5
+Version: 1.0.6
