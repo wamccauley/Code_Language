@@ -4,4 +4,5 @@
 
 ## LeetCode Problems
 
-1. [Two Sum](/dsa/twosum.md)
+1. [Two Sum](/leetcode/two-sum.md)
+1. [Two Sum II](/leetcode/two-sum-ii.md)
