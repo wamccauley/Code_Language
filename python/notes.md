@@ -121,3 +121,19 @@
     - Advanced topics in Python optimization and performance tuning
 
 12. **Test a Python App**
+
+### Miscellaneous:
+
+- Python libraries
+- SQL (mysql, postgres)
+- ORM Architecture
+- Cloud platforms + certificates
+- Deployment and CI/CD
+- Testing and Debugging
+- Version Control
+
+- Top Interview Questions
+- Review Roadmaps (All kind)
+  https://chatgpt.com/c/76eaf659-4a7a-4caa-bc71-2459f278ba39
+
+- Get Mentorships (All kind)
