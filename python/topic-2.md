@@ -492,3 +492,5 @@ print(instance1 is instance2)  # Output: True
 - **Code Reuse**: Centralize common class behavior or modifications.
 - **Encapsulation**: Separate concerns related to class creation and behavior.
 - **Customization**: Flexibility to tailor class creation to specific needs without modifying individual classes.
+
+https://chatgpt.com/c/a6f0da84-4a8b-4cb7-9b76-ffc8ac2d3e9b
