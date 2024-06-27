@@ -17,4 +17,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 1.2.1
+Version: 1.2.2

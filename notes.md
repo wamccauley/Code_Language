@@ -1,22 +1,5 @@
 ### Topic 2:
 
-1. **Generators and Iterators**
-2. **Decorators (Advanced Usage)**
-3. **Context Managers (Advanced Patterns)**
-4. **Metaclasses (Customizing Class Creation)**
-5. **Concurrency and Parallelism**
-   - Threading vs. Multiprocessing
-   - asyncio and concurrent.futures
-6. **Asynchronous Programming**
-   - async and await syntax
-   - Handling asynchronous I/O operations
-7. **Functional Programming**
-   - Lambda functions
-   - Higher-order functions
-   - functools module (functools.wraps, functools.partial)
-8. **Modules and Packages**
-   - Creating and organizing Python modules
-   - Packaging Python code for distribution
 9. **Regular Expressions (Advanced Usage)**
    - Lookahead and lookbehind assertions
    - Non-greedy matching
