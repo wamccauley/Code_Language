@@ -5,7 +5,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 ## Table of Contents
 
 1. [Python](/python.md)
-2. [Django and Django REST Framework (DRF)](#django)django-projects.md
+2. [Django and Django REST Framework (DRF)](#django)
 3. [Django Projects](/django-projects.md)
 4. [Data Structures and Algorithms](/dsa.md)
 5. [Linux](/linux.md)
