@@ -1,15 +1,11 @@
 ### Miscellaneous:
 
 notes:
-learn postgres
-move git and docker and other tigns out
-organize linux
-expand git and docker
-add kubern
+make a quick notes page
+make a devops tools page (kubern, aws)
 
-- Top Interview Questions
+make a Top Interview Questions page
 
-- Cloud platforms + certificates
 - Deployment and CI/CD
 - Testing and Debugging
 
