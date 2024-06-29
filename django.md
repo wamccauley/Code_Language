@@ -57,12 +57,13 @@ Django's philosophy is centered on the principles of rapid development, clean an
 1. Django Signals
 2. Caching
 3. Sessions
-4. Internationalization and Localization
-5. Management Commands
-6. Django and Asynchronous Views
-7. Working with Databases (Other than SQLite)
-8. Custom User Models
-9. Security Best Practices
+4. Environment Variables
+5. Internationalization and Localization
+6. Management Commands
+7. Django and Asynchronous Views
+8. Working with Databases (Other than SQLite)
+9. Custom User Models
+10. Security Best Practices
 
 ### Testing
 

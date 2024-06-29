@@ -55,6 +55,8 @@
 - Release Management
 - Task Tracking (Trello, Kanban)
 - Project Management Tools (Jira, Asana)
+- Change Logs
+- Writing a README
 - Time Management and Productivity Tools
 - Conflict Resolution in Teams
 - Effective Communication in Teams
@@ -67,6 +69,8 @@
 - GraphQL
 - Database Design and Management
 - SQL vs. NoSQL Databases
+- Authentication (Session, Basic, Token)
+- Authentication vs Authorization
 - Caching Strategies
 - Load Balancing
 - Monitoring and Logging
