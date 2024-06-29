@@ -9,24 +9,29 @@ Django's philosophy is centered on the principles of rapid development, clean an
 ## Introduction
 
 1. [Setting Up a Django Project](/django/project-sample.md)
-1. Apps and Projects
-1. Django Admin Interface
-1. URL Routing and Configuration
-1. Views and URLconfs
-1. Django Models
-1. Static Files Handling
+2. [Apps and Project Structure](/django/apps-and-project-structure.md)
+3. [Django Admin Interface](/django/admin-interface.md)
+4. [URL Routing and Configuration](/django/url-routing-and-configuration.md)
 
 ### Models
 
-1. Defining Models
-2. Model Fields
-3. Model Methods
-4. Model Meta Options
-5. QuerySets and Querying the Database
-6. Relationships (OneToOne, ManyToMany, ForeignKey)
-7. Model Inheritance
-8. Managers and QuerySets
-9. Model Migrations
+1. [Defining Models](/django/defining-models.md)
+2. [Model Fields](/django/model-fields.md)
+3. [Model Methods](/django/model-methods.md)
+4. [Model Meta Options](/django/model-meta-options.md)
+5. [Model Inheritance](/django/model-inheritance.md)
+6. [Model Migrations](/django/model-migrations.md)
+7. [Relationships (OneToOne, ManyToMany, ForeignKey)](/django/relationships.md)
+
+### Queries
+
+1. [Creating Queries](/django/creating-queries.md)
+2. [QuerySets](/django/querysets.md)
+3. [Basic Query Methods](/django/basic-query-methods.md)
+4. [Field Lookups](/django/field-lookups.md)
+5. [Query Expressions](/django/query-expressions.md)
+6. [Complex Lookups](/django/complex-lookups.md)
+7. [Aggregation and Annotation](/django/aggregation-annotation.md)
 
 ### Views
 
