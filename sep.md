@@ -1,24 +1,8 @@
-### Miscellaneous:
+Software Engineering:
 
-notes:
-make a quick notes page
-make a devops tools page (kubern, aws)
-
-make a Top Interview Questions page
-
-- Deployment and CI/CD
-- Testing and Debugging
-
-- Review Roadmaps (All kind)
-
-- Get Mentorships (All kind)
-
-You can categorize these lists under the heading **"Comprehensive Software Engineering Topics"** and then divide them into two main sections:
-
-1. **Practical Software Engineering Topics**
-2. **Theoretical Software Engineering Topics**
-
-Here’s how you can structure it:
+    Principles: SOLID, DRY, KISS, YAGNI, design patterns, architecture styles.
+    Practices: Code reviews, testing strategies, CI/CD, debugging, performance optimization.
+    Project Management: Agile methodologies, version control (Git), collaboration tools.
 
 # Software Engineering Theory
 

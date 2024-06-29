@@ -1,4 +1,4 @@
-# Todo App
+# Simple Project: Todo App
 
 ### Step 1: Set Up the Environment
 
