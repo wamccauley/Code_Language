@@ -1,4 +1,4 @@
-# Two Sum II Solution
+# Two Sum II
 
 Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number. The function should return the indices of the two numbers (1-based index).
 
