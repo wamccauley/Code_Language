@@ -27,11 +27,10 @@ Django's philosophy is centered on the principles of rapid development, clean an
 
 1. [Creating Queries](/django/creating-queries.md)
 2. [QuerySets](/django/querysets.md)
-3. [Basic Query Methods](/django/basic-query-methods.md)
-4. [Field Lookups](/django/field-lookups.md)
-5. [Query Expressions](/django/query-expressions.md)
-6. [Complex Lookups](/django/complex-lookups.md)
-7. [Aggregation and Annotation](/django/aggregation-annotation.md)
+3. [Field Lookups](/django/field-lookups.md)
+4. [Query Expressions](/django/query-expressions.md)
+5. [Complex Lookups](/django/complex-lookups.md)
+6. [Aggregation and Annotation](/django/aggregation-annotation.md)
 
 ### Views
 

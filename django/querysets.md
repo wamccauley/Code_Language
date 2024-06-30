@@ -27,18 +27,6 @@ for author in authors:
     print(author.name)
 ```
 
-#### Chaining QuerySets
-
-You can chain multiple QuerySet methods to refine your queries. Each method returns a new QuerySet, allowing you to build complex queries step-by-step.
-
-##### Example of Chaining QuerySets
-
-Retrieve authors with a specific name and birth date after January 1, 2000:
-
-```python
-authors = Author.objects.filter(name='John').filter(birth_date__gt='2000-01-01')
-```
-
 #### Common QuerySet Methods
 
 Here are some common QuerySet methods you will use frequently:
@@ -124,15 +112,3 @@ first_ten_authors = Author.objects.all()[:10]
 ```
 
 - Retrieves the first ten authors.
-
-#### Aggregation with QuerySets
-
-Aggregation allows you to perform calculations on a set of values.
-
-```python
-from django.db.models import Avg
-
-average_age = Author.objects.all().aggregate(Avg('age'))
-```
-
-- Calculates the average age of all authors.

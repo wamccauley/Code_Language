@@ -76,20 +76,3 @@ non_recent_authors = Author.objects.exclude(birth_date__gt='2000-01-01')
 ```
 
 - `exclude(birth_date__gt='2000-01-01')` excludes authors with `birth_date` greater than January 1, 2000.
-
-#### Using Q Objects for Complex Queries
-
-Django's `Q` objects allow you to create more complex queries with OR, AND, and NOT operations.
-
-##### Example of Using Q Objects
-
-Retrieve authors named 'John' or born after January 1, 2000:
-
-```python
-from django.db.models import Q
-
-# Use Q objects for complex queries
-complex_query_authors = Author.objects.filter(Q(name='John') | Q(birth_date__gt='2000-01-01'))
-```
-
-- `Q(name='John') | Q(birth_date__gt='2000-01-01')` retrieves authors named 'John' or born after January 1, 2000.
