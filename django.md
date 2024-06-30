@@ -34,12 +34,12 @@ Django's philosophy is centered on the principles of rapid development, clean an
 
 ### Views
 
-1. Function-Based Views (FBVs)
-2. Class-Based Views (CBVs)
-3. Generic Views
-4. Mixins
-5. Decorators
-6. Handling Requests and Responses
+1. [Function-Based Views (FBVs)](/django/fbvs.md)
+2. [Class-Based Views (CBVs)](/django/cbvs.md)
+3. [Generic Views](/django/generic-views.md)
+4. [Mixins](/django/mixins.md)
+5. [Decorators](/django/decorators.md)
+6. [Handling Requests and Responses](/django/requests-responses.md)
 
 ### Authentication
 
