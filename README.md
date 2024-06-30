@@ -10,7 +10,6 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 4. [Software Engineering Principles ⏳](/sep.md)
 5. [DevOps Principles ⏳](/devops.md)
 6. [Linux](/linux.md)
-7. [SQL](/sql.md)
 
 Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)
 
