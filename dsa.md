@@ -10,3 +10,4 @@
 3. [Contains Duplicate II](/leetcode/contains-duplicate-ii.md)
 4. [Two Sum](/leetcode/two-sum.md)
 5. [Two Sum II](/leetcode/two-sum-ii.md)
+6. [Group Anagrams](/leetcode/group-anagrams.md)
