@@ -2,7 +2,8 @@
 
 ### Principles and Best Practices
 
-- SOLID Principles
+1. [SOLID Principles](/sep/solid-principles.md)
+
 - DRY Principle (Don't Repeat Yourself)
 - KISS Principle (Keep It Simple, Stupid)
 - YAGNI Principle (You Aren't Gonna Need It)
