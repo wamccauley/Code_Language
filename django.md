@@ -43,17 +43,18 @@ Django's philosophy is centered on the principles of rapid development, clean an
 
 ### Authentication
 
-1. [User Authentication and Authorization](/django/user-authentication-authorization.md)
-2. [Login and Logout](/django/login-logout.md)
-3. [Password Management](/django/password-management.md)
-4. [User Registration](/django/user-registration.md)
-5. [Permissions and Groups](/django/permissions-groups.md)
+1. User Authentication and Authorization
+2. Django Authentication System
+3. Login and Logout
+4. Password Management
+5. User Registration
+6. Permissions and Groups
 
 ### Middleware
 
-1. [Understanding Middleware](/django/understanding-middleware.md)
-2. [Built-in Middleware](/django/built-in-middleware.md)
-3. [Custom Middleware](/django/custom-middleware.md)
+1. Understanding Middleware
+2. Built-in Middleware
+3. Custom Middleware
 
 ### Advanced Topics
 
