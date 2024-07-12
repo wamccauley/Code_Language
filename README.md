@@ -9,7 +9,8 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 3. [Data Structures and Algorithms ⏳](/dsa.md)
 4. [Software Engineering Principles ⏳](/sep.md)
 5. [DevOps Principles ⏳](/devops.md)
-6. [Linux](/linux.md)
+6. [Fundamentals of Networking ⏳](/networking.md)
+7. [Linux](/linux.md)
 
 Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)
 
@@ -17,4 +18,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 1.6.1
+Version: 1.6.2

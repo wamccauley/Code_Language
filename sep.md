@@ -52,6 +52,9 @@
 
 ### Software Development Tools and Practices
 
+- Naming Conventions
+- HTTP Methods
+- Server Codes
 - Versioning
 - Release Management
 - Task Tracking (Trello, Kanban)
@@ -62,21 +65,23 @@
 - Conflict Resolution in Teams
 - Effective Communication in Teams
 - Leadership and Mentoring
+- Code Review and Rating
 
 ### Technologies and Infrastructure
 
 - API Design and Development
+- API versioning
 - RESTful Services
 - GraphQL
 - Database Design and Management
 - SQL vs. NoSQL Databases
 - Authentication (Session, Basic, Token)
+- Tokens and CSRF
 - Authentication vs Authorization
 - Caching Strategies
 - Load Balancing
 - Monitoring and Logging
 - Cloud Services (AWS, Azure, GCP)
-- DevOps Practices
 - Containerization (Docker)
 - Orchestration (Kubernetes)
 - Infrastructure as Code (Terraform, Ansible)
