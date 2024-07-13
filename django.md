@@ -61,7 +61,7 @@ Django's philosophy is centered on the principles of rapid development, clean an
 1. Django Signals
 2. Caching
 3. Sessions
-4. Environment Variables
+4. Environment Variables and Secret Keys
 5. Internationalization and Localization
 6. Management Commands
 7. Django and Asynchronous Views
@@ -197,6 +197,10 @@ Django's philosophy is centered on the principles of rapid development, clean an
 3. Rate Limiting
 4. Asynchronous Views with Django Channels
 5. Using WebSockets with DRF
+
+#### Misc
+
+1. [Uploading Images](/drf/uploading-images.md)
 
 #### Best Practices
 
