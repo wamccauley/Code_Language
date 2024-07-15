@@ -3,12 +3,15 @@
 The KISS (Keep It Simple, Stupid) principle is a software design philosophy that promotes simplicity. The idea is that most systems work best if they are kept simple rather than made complex. Therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided.
 
 1. **Simplicity:**
+
    - Strive to keep your code and systems as straightforward and uncomplicated as possible. Simple code is easier to read, understand, and maintain.
 
 2. **Avoid Over-Engineering:**
+
    - Resist the temptation to add features or complexity that are not necessary for solving the current problem. Focus on the essential requirements.
 
 3. **Readability:**
+
    - Write code that is easy for others (and yourself) to read and understand. Clear and concise code is more maintainable and less prone to errors.
 
 4. **Maintainability:**
@@ -17,12 +20,15 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 **Benefits:**
 
 1. **Ease of Understanding:**
+
    - Code that is simple and straightforward is easier for new developers to understand and work with.
 
 2. **Reduced Errors:**
+
    - Simpler code has fewer places where bugs can hide, reducing the likelihood of errors.
 
 3. **Faster Development:**
+
    - Simple solutions can be implemented more quickly, speeding up development time.
 
 4. **Improved Collaboration:**
@@ -32,6 +38,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 
 1. **Avoid Unnecessary Complexity:**
    - Don’t use complex structures or algorithms when a simpler one will do.
+
 ```python
    # Complex Solution
    def find_max(numbers):
@@ -48,6 +55,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 
 1. **Clear and Concise Code:**
    - Write code that is easy to follow and understand.
+
 ```python
    # Complex Code
    def calculate_total(price, tax_rate):
@@ -61,6 +69,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 
 3. **Avoid Over-Engineering:**
    - Don’t add features or functionality until they are needed.
+
 ```python
    # Over-Engineered Code
    class Animal:
@@ -100,9 +109,11 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 **Common Pitfalls:**
 
 1. **Over-Simplification:**
+
    - While simplicity is important, it’s also crucial to ensure that the solution is sufficient for the problem. Don’t simplify to the point where the code no longer meets the requirements.
 
 2. **Ignoring Future Needs:**
+
    - Keep it simple, but also consider potential future requirements. Striking a balance between simplicity and extensibility is key.
 
 3. **Misinterpreting KISS:**
