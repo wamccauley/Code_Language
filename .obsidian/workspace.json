@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "sep/kiss-principle.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "sep/kiss-principle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "sep/kiss-principle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "sep/kiss-principle.md"
               }
             }
           }
@@ -148,13 +148,13 @@
   },
   "active": "1023aeeb1ed879f9",
   "lastOpenFiles": [
+    "README.md",
     "sep/kiss-principle.md",
     "linux/commands.md",
     "linux/file-system-architecture.md",
     "linux/boot.md",
     "sep.md",
     "sep/dry-principle.md",
-    "README.md",
     "django.md"
   ]
 }

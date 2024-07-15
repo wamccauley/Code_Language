@@ -32,7 +32,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 
 1. **Avoid Unnecessary Complexity:**
    - Don’t use complex structures or algorithms when a simpler one will do.
-   ```python
+```python
    # Complex Solution
    def find_max(numbers):
        max_num = float('-inf')
@@ -44,11 +44,11 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
    # Simple Solution
    def find_max(numbers):
        return max(numbers)
-   ```
+```
 
-2. **Clear and Concise Code:**
+1. **Clear and Concise Code:**
    - Write code that is easy to follow and understand.
-   ```python
+```python
    # Complex Code
    def calculate_total(price, tax_rate):
        total = price + (price * tax_rate)
@@ -57,11 +57,11 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
    # Simple Code
    def calculate_total(price, tax_rate):
        return price * (1 + tax_rate)
-   ```
+```
 
 3. **Avoid Over-Engineering:**
    - Don’t add features or functionality until they are needed.
-   ```python
+```python
    # Over-Engineered Code
    class Animal:
        def __init__(self, name, age):
@@ -95,7 +95,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 
        def speak(self):
            return "Meow"
-   ```
+```
 
 **Common Pitfalls:**
 
