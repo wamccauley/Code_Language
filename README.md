@@ -8,7 +8,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 2. [Django and Django REST Framework (DRF) ⏳](/django.md)
 3. [Data Structures and Algorithms ⏳](/dsa.md)
 4. [Software Engineering Principles ⏳](/sep.md)
-5. [DevOps Principles ⏳](/devops.md)
+5. [DevOps and Deployment ⏳](/devops.md)
 6. [Fundamentals of Networking ⏳](/networking.md)
 7. [Linux](/linux.md)
 8. [Misc](/misc.md)
@@ -19,4 +19,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 1.7.0
+Version: 1.7.1

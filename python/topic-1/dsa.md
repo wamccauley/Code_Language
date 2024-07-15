@@ -136,7 +136,7 @@ a, b, c = my_tuple
 A set is an unordered, mutable collection of **unique** elements.
 
 ```python
-my_set = {1, 2, 3}
+my_set = {1, 2, 3} # my_set = set({1, 2, 3})
 ```
 
 - **add()**: Adds an element.

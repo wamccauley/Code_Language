@@ -18,7 +18,7 @@ Contains essential command binaries (executables) needed for single-user mode an
 
 ### `/sbin` - System Binaries
 
-Holds essential system binaries that are typically used by the system administrator. These binaries are crucial for system maintenance and repair.
+Holds essential system binaries that are typically used by the system administrator. These binaries are essential for system maintenance and repair.
 
 - Examples: `fsck`, `reboot`, `shutdown`, `ifconfig`
 

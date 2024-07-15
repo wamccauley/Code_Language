@@ -1,7 +1,5 @@
 ## Managing Dependencies
 
-Managing dependencies is crucial for ensuring that your Python projects run smoothly and consistently across different environments. This guide covers how to install `pip` on Windows, macOS, and Linux, how to set up a virtual environment (venv), and how to install dependencies from a `requirements.txt` file.
-
 ### Installing `pip`
 
 `pip` is the package installer for Python, allowing you to install and manage additional libraries and dependencies that are not part of the Python standard library.
