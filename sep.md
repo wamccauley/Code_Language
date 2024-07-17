@@ -1,10 +1,5 @@
 # Software Engineering Principles
 
-<br>
-### Clean Code Book Summary and Notes
-
-<i>Nothing to see here yet</i>
-
 ### Principles and Best Practices
 
 1. [SOLID Principles](/sep/solid-principles.md)
@@ -160,3 +155,5 @@
 - Legacy Systems
 - Migration Strategies
 - Emerging Trends in Software Engineering
+
+### Clean Code Book Summary and Notes
