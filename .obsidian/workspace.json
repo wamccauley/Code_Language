@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5838a190b5655fa3",
+        "id": "31a24cfc1ff56cc3",
         "type": "tabs",
         "children": [
           {
-            "id": "fb03784fb8da915d",
+            "id": "f7e930ca9c173f9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ]
@@ -138,9 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb03784fb8da915d",
+  "active": "f7e930ca9c173f9e",
   "lastOpenFiles": [
+    "sep.md",
     "dsa.md",
+    "sql-table-column-duplicate.md",
+    "misc.md",
+    "misc/sql-column-like-another-column.md",
     "leetcode/binary-search.md",
     "leetcode/reorder-list.md",
     "leetcode/merge-two-sorted-lists.md",
@@ -159,13 +171,9 @@
     "dsa/stack.md",
     "dsa/linked-list.md",
     "misc/gcc-not-found-in-path.md",
-    "misc.md",
     "misc/nginx-413.md.md",
     "linux.md",
     "sep/kiss-principle.md",
-    "linux/commands.md",
-    "linux/file-system-architecture.md",
-    "linux/boot.md",
-    "sep.md"
+    "linux/commands.md"
   ]
 }
