@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sep.md",
+                "file": "misc/sql-table-column-duplicate.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sep.md",
+                "file": "misc/sql-table-column-duplicate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sep.md",
+                "file": "misc/sql-table-column-duplicate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sep.md"
+                "file": "misc/sql-table-column-duplicate.md"
               }
             }
           }
@@ -148,12 +148,13 @@
   },
   "active": "f7e930ca9c173f9e",
   "lastOpenFiles": [
-    "README.md",
-    "sep.md",
-    "dsa.md",
-    "sql-table-column-duplicate.md",
     "misc.md",
+    "misc/sql-table-column-duplicate.md",
     "misc/sql-column-like-another-column.md",
+    "README.md",
+    "leetcode/contains-duplicate.md",
+    "dsa.md",
+    "sep.md",
     "leetcode/binary-search.md",
     "leetcode/reorder-list.md",
     "leetcode/merge-two-sorted-lists.md",
@@ -173,7 +174,6 @@
     "misc/gcc-not-found-in-path.md",
     "misc/nginx-413.md.md",
     "linux.md",
-    "sep/kiss-principle.md",
-    "linux/commands.md"
+    "sep/kiss-principle.md"
   ]
 }

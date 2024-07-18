@@ -1,4 +1,4 @@
-l
+
 To duplicated a table in SQL:
 
 ```sql
