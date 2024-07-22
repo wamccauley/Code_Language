@@ -4,6 +4,12 @@ Django, The web framework for perfectionists with deadlines 🤌
 
 Django's philosophy is centered on the principles of rapid development, clean and pragmatic design, and the "don't repeat yourself" (DRY) principle.
 
+When building a large database-driven application, I would honestly pay to use Django.
+
+Django follows the "**Batteries included**" philosophy and provides almost everything developers might want to do "**out of the box**". Because everything you need is part of the one "product", it all works seamlessly together, follows consistent design principles, and has extensive and up-to-date documentation.
+
+With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#modelviewset) [lines](https://www.django-rest-framework.org/api-guide/serializers/#modelserializer) of code I get `GET`, `POST`, `PUT`, `PATCH`, and `DELETE` API endpoints for any DB table normalised into clean consistent formats, with proper status codes, proper exceptions, throttling, permissions (per user, per object, e.t.c), are browsable, easy to document, and all the other good stuff that proper APIs should have. 🙌 🔥
+
 ## Quick Docs 📗
 
 ## Introduction
@@ -78,10 +84,11 @@ Django's philosophy is centered on the principles of rapid development, clean an
 
 ### Deployment
 
-1. Deploying Django with WSGI
-2. Deploying to AWS (Elastic Beanstalk, EC2)
-3. Using Docker with Django
-4. Setting Up CI/CD for Django Projects
+1. [Deployment Checklist](/django/deployment-checklist.md)
+2. Deploying Django with WSGI
+3. Deploying to AWS (Elastic Beanstalk, EC2)
+4. Using Docker with Django
+5. Setting Up CI/CD for Django Projects
 
 ### Performance Optimization
 
@@ -108,19 +115,22 @@ Django's philosophy is centered on the principles of rapid development, clean an
 
 ### Django Rest Framework (DRF)
 
+
+[Why DRF ?? 💡](/django/why-drf.md)
+
 #### DRF Basics
 
-1. Creating a Simple API
-2. API Views
-3. Serializers
-4. Routers
+1. [Creating a Simple API](/django/creating-a-aimple-api.md)
+2. [Requests](/django/requests.md)
+3. [Responses](/django/responses.md)
 
 #### Views
 
 1. Function-Based Views (FBVs) in DRF
 2. Class-Based Views (CBVs) in DRF
 3. ViewSets and Routers
-4. Generic Views
+4. [API Views](/django/apiview.md)
+5. [Generic Views](/django/generic-view.md)
 5. Mixins
 
 #### Serializers

@@ -52,3 +52,10 @@ The most effective approach to solving coding problems combines both problem-sol
 #### Binary Search
 
 1. [Binary Search](/leetcode/binary-search.md)
+
+### Trees
+1. [Invert Binary Tree](/leetcode/invert-binary-tree.md)
+2. [Maximum Depth of Binary Tree](/leetcode/maximum-depth-of-binary-tree.md)
+
+### Trees
+1. [Implement Trie (Prefix Tree)](/leetcode/implement-trie-prefix-tree.md)
