@@ -13,7 +13,6 @@
 11. [Generate SSH Private Key](./misc/generate-ssh-private-key.md)
 12. [Deploy a Django App using Docker](./misc/deploy-django-using-docker.md)
 13. [GitHub and Docker CI/CD Pipeline](./misc/github-and-docker-cicd-pipeline.md)
-
-
-wsgi asgi
-search grep
+14. [File Compression in Linux](./misc/file-compression-in-linux.md)
+15. [WSGI and ASGI](./misc/wsgi-and-asgi.md)
+16. [Grep Command in Linux](./misc/grep.md)
