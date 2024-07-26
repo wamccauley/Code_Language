@@ -2,7 +2,7 @@
 
 ### Principles and Best Practices
 
-1. [SOLID Principles](/sep/solid-principles.md)
+1. [SOLID Principles](/sep/solid.md)
 2. [DRY Principle (Don't Repeat Yourself)](/sep/dry-principle.md)
 2. [KISS Principle](/sep/kiss-principle.md)
 
