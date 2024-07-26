@@ -7,3 +7,13 @@
 5. [Create a Column Based on Another Column in SQL](./misc/sql-column-like-another-column.md)
 6. [Duplicated a Table and a Column in SQL](./misc/sql-table-column-duplicate.md)
 7. [Flatten Matrix to Array](./misc/flatten-matrix-to-array.md)
+8. [Load Balancing in Nginx](./misc/load-balancing-in-nginx.md)
+9. [Add Firewall Rules](./misc/add-firewall-rules.md)
+10. [Using Nginx as a Reverse Proxy](./misc/using-nginx-as-a-reverse-proxy.md)
+11. [Generate SSH Private Key](./misc/generate-ssh-private-key.md)
+12. [Deploy a Django App using Docker](./misc/deploy-django-using-docker.md)
+13. [GitHub and Docker CI/CD Pipeline](./misc/github-and-docker-cicd-pipeline.md)
+
+
+wsgi asgi
+search grep

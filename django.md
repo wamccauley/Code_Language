@@ -1,6 +1,6 @@
 # Django
 
-Django, The web framework for perfectionists with deadlines 🤌
+Django, The web framework for **perfectionists** with **deadlines** 🤌
 
 Django's philosophy is centered on the principles of rapid development, clean and pragmatic design, and the "don't repeat yourself" (DRY) principle.
 

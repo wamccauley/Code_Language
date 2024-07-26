@@ -10,13 +10,15 @@
           {
             "id": "4c24c6022b369223",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "misc.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ]
@@ -85,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "misc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "misc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "misc.md"
               }
             }
           }
@@ -148,7 +150,15 @@
   },
   "active": "4c24c6022b369223",
   "lastOpenFiles": [
+    "misc/github-and-docker-cicd-pipeline.md",
+    "misc.md",
+    "misc/deploy-django-using-docker.md",
+    "misc/generate-ssh-private-key.md.md",
+    "misc/add-firewall-rules.md",
+    "misc/using-nginx-as-a-reverse-proxy.md",
+    "misc/load-balancing-in-nginx.md",
     "django.md",
+    "README.md",
     "django/why-drf.md",
     "django/generic-view.md",
     "django/apiview.md",
@@ -162,19 +172,11 @@
     "devops.md",
     "devops/docker.md",
     "devops",
-    "README.md",
     "leetcode/binary-search.md",
     "leetcode/invert-binary-tree.md",
     "python.md",
     "random.md",
     "sep.md",
-    "misc/flatten-matrix-to-array.md",
-    "misc.md",
-    "misc/sql-table-column-duplicate.md",
-    "misc/sql-column-like-another-column.md",
-    "leetcode/contains-duplicate.md",
-    "leetcode/reorder-list.md",
-    "leetcode/merge-two-sorted-lists.md",
     "leetcode/question_11.jpg"
   ]
 }
