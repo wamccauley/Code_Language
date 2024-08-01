@@ -16,4 +16,4 @@
 14. [File Compression in Linux](./misc/file-compression-in-linux.md)
 15. [WSGI and ASGI](./misc/wsgi-and-asgi.md)
 16. [Grep Command in Linux](./misc/grep.md)
-17. [Use cURL With REST API]((./misc/curl-in-rest-api.md))
+17. [Use cURL With REST API](./misc/curl-in-rest-api.md)
