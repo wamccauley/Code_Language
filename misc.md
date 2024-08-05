@@ -17,3 +17,4 @@
 15. [WSGI and ASGI](./misc/wsgi-and-asgi.md)
 16. [Grep Command in Linux](./misc/grep.md)
 17. [Use cURL With REST API](./misc/curl-in-rest-api.md)
+18. [Use Htaccess as a Reverse Proxy](./misc/htaccess-reverse-proxy.md)

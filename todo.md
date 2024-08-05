@@ -22,4 +22,3 @@ Messaging Queues: RabbitMQ
 Jenkins
 GitLab CI
 Monitoring and Logging (Prometheus, Grafana)
-Advanced Testing

@@ -113,7 +113,7 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 4. Security Best Practices
 5. Maintaining Django Projects
 
-### Django Rest Framework (DRF)
+# Django Rest Framework (DRF)
 
 
 [Why DRF ?? 💡](/django/why-drf.md)
@@ -203,7 +203,7 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 #### Advanced Topics
 
 1. Hyperlinked APIs
-2. API Documentation with DRF
+2. API Documentation with DRF (Swagger)
 3. Rate Limiting
 4. Asynchronous Views with Django Channels
 5. Using WebSockets with DRF
@@ -219,3 +219,18 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 3. Security Best Practices for DRF
 4. Documentation Practices for APIs
 5. Maintaining DRF Projects
+
+<br>
+# Channels and WebSockets
+
+<i>Nothing to see here yet</i>
+<br>
+
+# Graphene (GraphQL)
+
+<i>Nothing to see here yet</i>
+<br>
+
+# Django-Ninja
+
+<i>Nothing to see here yet</i>
