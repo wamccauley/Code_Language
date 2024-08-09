@@ -1,4 +1,3 @@
-
 1. **Generate SSH Key Pair**:
    You can generate an SSH key pair using the `ssh-keygen` command.
 
@@ -20,6 +19,7 @@
    ```
 
    Copy the entire content of the file including this:
+
 ```
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEA7...
@@ -27,6 +27,29 @@ MIIEpAIBAAKCAQEA7...
 -----END RSA PRIVATE KEY-----
 ```
 
+Or use
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+This should output something like:
+
+```text
+ssh-rsa AAAAB3... user@example.com
+```
+
+Alternatively, on Windows, you can use:
+
+```bash
+type %userprofile%\.ssh\id_rsa.pub
+```
+
+Or using git CLI:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
 
 3. **Add the Public Key to the server**:
    On your VPS server, add the public key to the `~/.ssh/authorized_keys` file. You can do this by appending the content of the public key file to `authorized_keys`:
@@ -34,7 +57,6 @@ MIIEpAIBAAKCAQEA7...
    ```bash
    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
    ```
-
 
 ### Adding the SSH Key as a GitHub Secret
 

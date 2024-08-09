@@ -115,7 +115,6 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 
 # Django Rest Framework (DRF)
 
-
 [Why DRF ?? 💡](/django/why-drf.md)
 
 #### DRF Basics
@@ -131,7 +130,7 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 3. ViewSets and Routers
 4. [API Views](/django/apiview.md)
 5. [Generic Views](/django/generic-view.md)
-5. Mixins
+6. Mixins
 
 #### Serializers
 
@@ -157,7 +156,7 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 5. Custom Authentication
 6. Permission Classes
 7. Object-Level Permissions
-8. Custom Permissions
+8. [Custom Permissions and Roles](/django/custom-permissions-and-roles.md)
 
 #### Throttling
 
