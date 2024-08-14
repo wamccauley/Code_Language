@@ -45,34 +45,23 @@
 ### 4. **DNS and Domain Management**
 
 - **DNS Basics**
-  - What is DNS?
-  - How DNS works
+  - [What is DNS?](/networking/what-is-dns.md)
+  - [How DNS works](/networking/how-dns-work.md)
 - **DNS Records**
-  - A, AAAA, CNAME, MX, TXT, etc.
-- **Domain Registration and Management**
-- **DNS Security (DNSSEC)**
+  - [A, AAAA, CNAME, MX, TXT, etc.](/networking/dns-records.md)
+- [Domain Registration and Management](/networking/domain-registration-and-management.md)
+- [DNS Security (DNSSEC)](/networking/dns-security.md)
 
 ### 5. **Network Hardware**
 
-- **Routers and Switches**
-  - Functions and types
-- **Modems**
-- **Network Interface Cards (NICs)**
-- **Access Points and Wireless Controllers**
+- [Routers and Switches](/networking/routers-and-switches.md)
+- [Modems](/networking/modems.md)
+- [Network Interface Cards (NICs)](/networking/network-interface-cards.md)
+- [Access Points and Wireless Controllers](/networking/access-points-and-wireless-controllers.md)
 
 ### 6. **Network Architecture**
 
-- **Client-Server Architecture**
-- **Peer-to-Peer Networks**
-- **Cloud Networking**
-  - Private, Public, Hybrid Clouds
-- **Virtualization**
-  - Virtual LANs (VLANs)
-  - Software-Defined Networking (SDN)
-
-### 7. **Networking Concepts**
-
-- **Load Balancing**
-- **Reverse Proxy**
-- **Content Delivery Networks (CDNs)**
-- **Quality of Service (QoS)**
+- [Client-Server Architecture](/networking/client-server-architecture.md)
+- [Peer-to-Peer Networks](/networking/peer-to-peer-networks.md)
+- [Cloud Networking](/networking/cloud-networking.md)
+- [Virtualization: VLANs and SDN](/networking/virtualization.md)
