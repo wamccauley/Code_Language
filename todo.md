@@ -1,6 +1,7 @@
-
 ## To learn:
 
+SE principles
+Django and DRF advanced topics
 Kubernetes
 Rancher and RancherOS
 Redis

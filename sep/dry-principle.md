@@ -1,6 +1,6 @@
 ## DRY Principle
 
-**Key Concepts:**
+**Concepts:**
 
 1. **Single Source of Truth (SSOT):**
 

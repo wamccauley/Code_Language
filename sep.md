@@ -1,19 +1,16 @@
 # Software Engineering Principles
 
+[Writing Clean and Maintainable Code 🚀](/sep/clean-code.md)
+
 ### Principles and Best Practices
 
 1. [SOLID Principles](/sep/solid.md)
 2. [DRY Principle (Don't Repeat Yourself)](/sep/dry-principle.md)
-2. [KISS Principle](/sep/kiss-principle.md)
+3. [KISS Principle](/sep/kiss-principle.md)
+4. [Debugging Best Practices](/sep/debugging.md)
+5. [Security Best Practices](/sep/security.md)
+6. [Authentication and Authorization](/sep/authentication-and-authorization.md)
 
-- KISS Principle (Keep It Simple, Stupid)
-- YAGNI Principle (You Aren't Gonna Need It)
-- Writing Clean and Maintainable Code
-- Debugging Best Practices
-- Security Best Practices
-- Authentication and Authorization
-- OAuth and OpenID Connect
-- Compliance (GDPR, HIPAA)
 - Software Engineering Ethics
 - Professional Responsibility
 - Intellectual Property in Software
@@ -155,5 +152,3 @@
 - Legacy Systems
 - Migration Strategies
 - Emerging Trends in Software Engineering
-
-### Clean Code Book Summary and Notes

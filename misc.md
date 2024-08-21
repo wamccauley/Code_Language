@@ -26,3 +26,5 @@
 24. [Set up Docker in Linux](./misc/set-up-docker-in-linux.md)
 25. [Print Current Working Directory in Pytohn](./misc/py-current-directory.md)
 26. [Simple WebSockets in Django](./misc/django-simple-websockets.md)
+27. [Remove browsable API in Django](./misc/remove-browsable-api-in-django.md)
+28. [Share files through SSH](./misc/share-files-through-ssh.md)
