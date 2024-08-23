@@ -5,11 +5,11 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 ## Table of Contents
 
 1. [Python](/python.md)
-2. [Django and Django REST Framework (DRF) ⏳](/django.md)
-3. [Data Structures and Algorithms ⏳](/dsa.md)
-4. [Software Engineering Principles ⏳](/sep.md)
+2. [Django and Django REST Framework (DRF)](/django.md)
+3. [Data Structures and Algorithms](/dsa.md)
+4. [Software Engineering Principles](/sep.md)
 5. [DevOps and Deployment ⏳](/devops.md)
-6. [Fundamentals of Networking ⏳](/networking.md)
+6. [Fundamentals of Networking](/networking.md)
 7. [Linux](/linux.md)
 8. [Misc](/misc.md)
 

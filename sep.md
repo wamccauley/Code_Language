@@ -10,28 +10,19 @@
 4. [Debugging Best Practices](/sep/debugging.md)
 5. [Security Best Practices](/sep/security.md)
 6. [Authentication and Authorization](/sep/authentication-and-authorization.md)
-
-- Software Engineering Ethics
-- Professional Responsibility
-- Intellectual Property in Software
-- Software Patents
-- Open Source Software Licensing
+7. [Software Engineering Ethics](/sep/ethics.md)
+8. [Professional Responsibility](/sep/responsibility.md)
 
 ### Development Processes and Methodologies
 
 - Software Development Life Cycle (SDLC)
-- Agile Methodologies
-- Waterfall Model
-- Big Bang Model
-- Spiral Model
-- Incremental and Iterative Development
+- Intellectual Property in Software
 - Domain-Driven Design (DDD)
 - Test-Driven Development (TDD)
 - Behavior-Driven Development (BDD)
 - Continuous Integration/Continuous Deployment (CI/CD)
 - Version Control (Git)
 - Code Reviews
-- Software Testing Life Cycle (STLC)
 - Verification and Validation
 
 ### Architectural Patterns and Design
