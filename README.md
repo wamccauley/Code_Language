@@ -13,19 +13,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 7. [Linux](/linux.md)
 8. [Misc](/misc.md)
 
-<br>
-
-<p>
-  <a href="RANDOM_PAGE" style="text-decoration:none;">
-    <button style="padding:10px 15px; font-size:14px;  color:white; background-color:#007BFF; border:none; border-radius:5px; cursor:pointer;">
-      Take Me to a Random Page &nbsp; 🎲
-    </button>
-  </a>
-</p>
-
-<br>
-
-Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :)
+Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :D
 
 Feel free to explore each section and make use of the information as needed. If you have any suggestions or contributions, please don't hesitate to create a pull request or open an issue.
 
