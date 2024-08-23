@@ -23,24 +23,23 @@
 6. [Behavior-Driven Development (BDD)](/sep/bdd.md)
 7. [Continuous Integration/Continuous Deployment (CI/CD)](/sep/cicd.md)
 8. [Version Control (Git)](/sep/version-control.md)
-
 9. [Code Reviews](/sep/code-reviews.md)
-
 10. [Verification and Validation](/sep/verification-and-validation.md)
 
 ### Architectural Patterns and Design
 
-- Architecture Styles
-- Design Patterns
-- Microservices Architecture
-- Monolithic vs. Microservices
-- Serverless Architecture
-- Client-Server Architecture
-- Event-Driven Architecture
-- Component-Based Architecture
-- Service-Oriented Architecture (SOA)
-- Model-View-Controller (MVC)
-- Model-View-ViewModel (MVVM)
+1. [Architecture Styles](/sep/architecture-styles.md)
+2. [Design Patterns](/sep/design-patterns.md)
+3. [Microservices Architecture](/sep/microservices-architectures.md)
+4. [Monolithic vs. Microservices](/sep/monolithic-vs-microservices.md)
+
+- [Serverless Architecture](/sep/serverless-architecture.md)
+- [Client-Server Architecture](/sep/client-server-architecture.md)
+- [Event-Driven Architecture](/sep/event-driven-architecture.md)
+- [Component-Based Architecture](/sep/component-based-architecture.md)
+- [Service-Oriented Architecture (SOA)](/sep/soa.md)
+- [Model-View-Controller (MVC)](/sep/mvc.md)
+- [Model-View-ViewModel (MVVM)](/sep/mvvm.md)
 
 ### Software Development Tools and Practices
 
