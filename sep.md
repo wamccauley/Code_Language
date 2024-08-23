@@ -8,11 +8,10 @@
 2. [DRY Principle (Don't Repeat Yourself)](/sep/dry-principle.md)
 3. [KISS Principle](/sep/kiss-principle.md)
 4. [Debugging Best Practices](/sep/debugging.md)
-5. [Security Best Practices](/sep/security.md)
-6. [Authentication and Authorization](/sep/authentication-and-authorization.md)
-7. [Software Engineering Ethics](/sep/ethics.md)
-8. [Software Licensing](/sep/licensing.md)
-9. [Professional Responsibility](/sep/responsibility.md)
+5. [Authentication and Authorization](/sep/authentication-and-authorization.md)
+6. [Software Engineering Ethics](/sep/ethics.md)
+7. [Software Licensing](/sep/licensing.md)
+8. [Professional Responsibility](/sep/responsibility.md)
 
 ### Development Processes and Methodologies
 
