@@ -44,8 +44,7 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 2. [Class-Based Views (CBVs)](/django/cbvs.md)
 3. [Generic Views](/django/generic-views.md)
 4. [Mixins](/django/mixins.md)
-5. [Decorators](/django/decorators.md)
-6. [Handling Requests and Responses](/django/requests-responses.md)
+5. [Handling Requests and Responses](/django/requests-responses.md)
 
 ### Authentication
 
