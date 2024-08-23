@@ -12,16 +12,27 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 6. [Fundamentals of Networking](/networking.md)
 7. [Linux](/linux.md)
 8. [Misc](/misc.md)
-
-<br>
+   <br>
 
 <p>
-  <a href="RANDOM_PAGE" style="text-decoration:none;">
-    <button style="padding:10px 15px; font-size:14px;  color:white; background-color:#007BFF; border:none; border-radius:5px; cursor:pointer;">
+  <a href="#" onclick="randomPage();" style="text-decoration:none;">
+    <button style="padding:10px 15px; font-size:14px; color:white; background-color:#007BFF; border:none; border-radius:5px; cursor:pointer;">
       Take Me to a Random Page &nbsp; 🎲
     </button>
   </a>
 </p>
+
+<script>
+  function randomPage() {
+    const pages = [
+      'django.md',
+      'dsa.md',
+      'linux.md',
+    ];
+    const randomPage = pages[Math.floor(Math.random() * pages.length)];
+    window.location.href = randomPage;
+  }
+</script>
 
 <br>
 
