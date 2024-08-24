@@ -43,20 +43,19 @@
 
 ### Software Development Tools and Practices
 
-- Naming Conventions
-- HTTP Methods
-- Server Codes
-- Versioning
-- Release Management
-- Task Tracking (Trello, Kanban)
-- Project Management Tools (Jira, Asana)
-- Change Logs
-- Writing a README
-- Time Management and Productivity Tools
-- Conflict Resolution in Teams
-- Effective Communication in Teams
-- Leadership and Mentoring
-- Code Review and Rating
+- [Naming Conventions](/sep/naming-conventions.md)
+- [HTTP Methods](/sep/http-methods.md)
+- [Server Codes](/sep/server-codes.md)
+- [Versioning](/sep/versioning.md)
+- [Release Management](/sep/release-management.md)
+- [Task Tracking](/sep/task-tracking.md)
+- [Project Management Tools](/sep/project-management.md)
+- [Change Logs](/sep/change-logs.md)
+- [Writing a README](/sep/writing-a-readme.md)
+- [Conflict Resolution in Teams](/sep/conflict-resolution-in-teams.md)
+- [Effective Communication in Teams](/sep/effective-communication-in-teams.md)
+- [Leadership and Mentoring](/sep/leadership-and-mentoring.md)
+- [Code Review and Rating](/sep/code-review-and-rating.md)
 
 ### Technologies and Infrastructure
 
