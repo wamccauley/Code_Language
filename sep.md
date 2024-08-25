@@ -77,38 +77,20 @@
 
 ### Quality Assurance and Testing
 
-- Unit Testing
-- Integration Testing
-- System Testing
-- Performance Testing
-- Stress Testing
-- Software Metrics
-- Code Quality Metrics
-- Software Quality Assurance (SQA)
-- Quality Control
-- Software Maintenance
-- Refactoring
-- Reverse Engineering
-- Reengineering
+1. [Unit Testing](/sep/unit-testing.md)
+2. [Integration Testing](/sep/integration-testing.md)
+3. [System Testing](/sep/system-testing.md)
+4. [Performance Testing](/sep/performance-testing.md)
+5. [Stress Testing](/sep/stress-testing.md)
+6. [Software Metrics](/sep/software-metrics.md)
+7. [Code Quality Metrics](/sep/code-quality-metrics.md)
+8. [Software Quality Assurance (SQA)](/sep/sqa.md)
+9. [Quality Control](/sep/quality-control.md)
+10. [Refactoring](/sep/refactoring.md)
 
-### Advanced Concepts and Technologies
+### Software Engineering Management and Support ⏳
 
-- Asynchronous Programming
-- Concurrency and Parallelism
-- Frontend-Backend Communication
-- Responsive Design
-- Progressive Web Apps (PWA)
-- Cross-Platform Development
-- Accessibility in Web Applications
-- Localization and Internationalization
-- Usability and User Experience (UX)
-
-### Software Engineering Management and Support
-
-- Software Metrics
 - Technical Debt
-- Software Configuration Management
-- Change Management
 - Software Risk Management
 - Risk Analysis and Mitigation
 - Software Project Management
@@ -116,30 +98,4 @@
 - Estimation Techniques (Function Points, COCOMO)
 - Critical Path Method (CPM)
 - Program Evaluation and Review Technique (PERT)
-- Resource Allocation
-- Software Economics
 - Capability Maturity Model Integration (CMMI)
-- Lean Software Development
-- Six Sigma in Software Engineering
-
-### Advanced Topics in Software Engineering
-
-- Formal Methods in Software Engineering
-- Formal Verification
-- Model Checking
-- Theorem Proving
-- Petri Nets
-- Software Reliability Engineering
-- Reliability Models
-- Fault Tolerance
-- Dependability
-- Concurrency Control
-- Deadlock Prevention and Avoidance
-- Transaction Management
-- Human-Computer Interaction (HCI)
-- Usability Engineering
-- Cognitive Dimensions Framework
-- Software Evolution
-- Legacy Systems
-- Migration Strategies
-- Emerging Trends in Software Engineering
