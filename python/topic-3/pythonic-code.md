@@ -49,7 +49,7 @@ def my_function(param1, param2):
 
 #### Using List Comprehensions and Generator Expressions
 
-**List comprehensions** and **generator expressions** are concise ways to create lists and iterators. They enhance readability and can be more efficient than traditional loops.
+**List comprehensions** and **generator expressions** are brief ways to create lists and iterators. They enhance readability and can be more efficient than traditional loops.
 
 - **List Comprehensions**:
   - Syntax: `[expression for item in iterable if condition]`

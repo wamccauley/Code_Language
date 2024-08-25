@@ -1,6 +1,6 @@
 ### Writing Clean and Maintainable Code
 
-These concise notes summarize key concepts from Clean Code by Robert C. Martin (also known as "Uncle Bob"), focusing on principles for writing clear, maintainable, and high-quality code.
+These brief notes summarize key concepts from Clean Code by Robert C. Martin (also known as "Uncle Bob"), focusing on principles for writing clear, maintainable, and high-quality code.
 
 ---
 

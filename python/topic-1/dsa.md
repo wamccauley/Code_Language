@@ -277,7 +277,7 @@ print(my_dict['name'])  # Alice
 
 #### Dictionary Comprehensions
 
-A concise way to create dictionaries.
+A brief way to create dictionaries.
 
 ```python
 squares = {x: x**2 for x in range(10)}

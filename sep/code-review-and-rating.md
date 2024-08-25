@@ -27,7 +27,7 @@ Code review aims to evaluating code changes before they are merged into the main
 
 2. **Review Submission:**
 
-   - The author submits the code for review, usually through a version control system like Git, along with a clear and concise description of the changes. This description should explain the purpose of the changes, how they were implemented, and any potential areas of concern.
+   - The author submits the code for review, usually through a version control system like Git, along with a clear and brief description of the changes. This description should explain the purpose of the changes, how they were implemented, and any potential areas of concern.
 
 3. **Reviewing the Code:**
 

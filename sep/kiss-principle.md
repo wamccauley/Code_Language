@@ -12,7 +12,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
 
 3. **Readability:**
 
-   - Write code that is easy for others (and yourself) to read and understand. Clear and concise code is more maintainable and less prone to errors.
+   - Write code that is easy for others (and yourself) to read and understand. Clear and brief code is more maintainable and less prone to errors.
 
 4. **Maintainability:**
    - Simpler codebases are easier to maintain and update. When changes are needed, they can be made more quickly and with less risk of introducing bugs.
@@ -53,7 +53,7 @@ The KISS (Keep It Simple, Stupid) principle is a software design philosophy that
        return max(numbers)
 ```
 
-1. **Clear and Concise Code:**
+1. **Clear and Simple Code:**
    - Write code that is easy to follow and understand.
 
 ```python

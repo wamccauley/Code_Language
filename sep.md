@@ -32,49 +32,48 @@
 2. [Design Patterns](/sep/design-patterns.md)
 3. [Microservices Architecture](/sep/microservices-architectures.md)
 4. [Monolithic vs. Microservices](/sep/monolithic-vs-microservices.md)
-
-- [Serverless Architecture](/sep/serverless-architecture.md)
-- [Client-Server Architecture](/sep/client-server-architecture.md)
-- [Event-Driven Architecture](/sep/event-driven-architecture.md)
-- [Component-Based Architecture](/sep/component-based-architecture.md)
-- [Service-Oriented Architecture (SOA)](/sep/soa.md)
-- [Model-View-Controller (MVC)](/sep/mvc.md)
-- [Model-View-ViewModel (MVVM)](/sep/mvvm.md)
+5. [Serverless Architecture](/sep/serverless-architecture.md)
+6. [Client-Server Architecture](/sep/client-server-architecture.md)
+7. [Event-Driven Architecture](/sep/event-driven-architecture.md)
+8. [Component-Based Architecture](/sep/component-based-architecture.md)
+9. [Service-Oriented Architecture (SOA)](/sep/soa.md)
+10. [Model-View-Controller (MVC)](/sep/mvc.md)
+11. [Model-View-ViewModel (MVVM)](/sep/mvvm.md)
 
 ### Software Development Tools and Practices
 
-- [Naming Conventions](/sep/naming-conventions.md)
-- [HTTP Methods](/sep/http-methods.md)
-- [Server Codes](/sep/server-codes.md)
-- [Versioning](/sep/versioning.md)
-- [Release Management](/sep/release-management.md)
-- [Task Tracking](/sep/task-tracking.md)
-- [Project Management Tools](/sep/project-management.md)
-- [Change Logs](/sep/change-logs.md)
-- [Writing a README](/sep/writing-a-readme.md)
-- [Conflict Resolution in Teams](/sep/conflict-resolution-in-teams.md)
-- [Effective Communication in Teams](/sep/effective-communication-in-teams.md)
-- [Leadership and Mentoring](/sep/leadership-and-mentoring.md)
-- [Code Review and Rating](/sep/code-review-and-rating.md)
+1. [Naming Conventions](/sep/naming-conventions.md)
+2. [HTTP Methods](/sep/http-methods.md)
+3. [Server Codes](/sep/server-codes.md)
+4. [Versioning](/sep/versioning.md)
+5. [Release Management](/sep/release-management.md)
+6. [Task Tracking](/sep/task-tracking.md)
+7. [Project Management Tools](/sep/project-management.md)
+8. [Change Logs](/sep/change-logs.md)
+9. [Writing a README](/sep/writing-a-readme.md)
+10. [Conflict Resolution in Teams](/sep/conflict-resolution-in-teams.md)
+11. [Effective Communication in Teams](/sep/effective-communication-in-teams.md)
+12. [Leadership and Mentoring](/sep/leadership-and-mentoring.md)
+13. [Code Review and Rating](/sep/code-review-and-rating.md)
 
 ### Technologies and Infrastructure
 
-- API Design and Development
-- API versioning
-- RESTful Services
-- GraphQL
-- Database Design and Management
-- SQL vs. NoSQL Databases
-- Authentication (Session, Basic, Token)
-- Tokens and CSRF
-- Authentication vs Authorization
-- Caching Strategies
-- Load Balancing
-- Monitoring and Logging
-- Cloud Services (AWS, Azure, GCP)
-- Containerization (Docker)
-- Orchestration (Kubernetes)
-- Infrastructure as Code (Terraform, Ansible)
+1. [API Design and Development](/sep/api-design-and-development.md)
+2. [API Versioning](/sep/api-versioning.md)
+3. [RESTful Services](/sep/restful-services.md)
+4. [GraphQL](/sep/graphql.md)
+5. [Database Design and Management](/sep/db-design.md)
+6. [SQL vs. NoSQL Databases](/sep/sql-vs-nosql.md)
+7. [Authentication (Session, Basic, Token)](/sep/authentication.md)
+8. [Tokens and CSRF](/sep/tokens-and-csrf.md)
+9. [Authentication vs Authorization](/sep/authentication-vs-authorization.md)
+10. [Caching Strategies](/sep/caching-strategies.md)
+11. [Load Balancing](/sep/load-balancing.md)
+12. [Monitoring and Logging](/sep/monitoring-and-logging.md)
+13. [Cloud Services (AWS, Azure, GCP)](/sep/cloud-services.md)
+14. [Containerization (Docker)](/sep/containerization.md)
+15. [Orchestration (Kubernetes)](/sep/orchestration.md)
+16. [Infrastructure as Code (Terraform, Ansible)](/sep/infrastructure-as-code.md)
 
 ### Quality Assurance and Testing
 

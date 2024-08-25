@@ -43,7 +43,7 @@
 
 4. **Description of Changes:**
 
-   - Provide a concise yet detailed description of each change. Include relevant information that explains the purpose and impact of the change, but avoid unnecessary technical jargon.
+   - Provide a brief yet detailed description of each change. Include relevant information that explains the purpose and impact of the change, but avoid unnecessary technical jargon.
 
 5. **References:**
    - Link to related issues, pull requests, or documentation where applicable. This allows users to delve deeper into specific changes if needed.

@@ -27,7 +27,7 @@ Effective communication is the cornerstone of any successful team. It ensures th
 
 1. **Clarity and Precision:**
 
-   - Avoid ambiguity by being clear and concise. Whether in written or verbal communication, use precise language that leaves little room for misinterpretation.
+   - Avoid ambiguity by being clear and brief. Whether in written or verbal communication, use precise language that leaves little room for misinterpretation.
 
 2. **Active Listening:**
 

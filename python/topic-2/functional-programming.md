@@ -99,5 +99,5 @@ Here, `partial` fixes the `exponent` argument of the `power` function, creating 
 ### Benefits of Functional Programming in Python
 
 - **Modularity**: Encourages writing modular and reusable code through small, composable functions.
-- **Readability**: Emphasizes clear, concise expressions of logic.
+- **Readability**: Emphasizes clear, brief expressions of logic.
 - **Concurrency**: Supports concurrent and parallel programming paradigms effectively, especially with tools like `map`, `filter`, and `reduce`.

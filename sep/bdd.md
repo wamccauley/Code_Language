@@ -79,7 +79,7 @@
 
 **4.2. Writing Good Scenarios**
 
-- Writing effective BDD scenarios requires skill. Scenarios should be clear, concise, and focused on behavior rather than implementation details. Poorly written scenarios can lead to confusion and may not provide the desired value.
+- Writing effective BDD scenarios requires skill. Scenarios should be clear, brief, and focused on behavior rather than implementation details. Poorly written scenarios can lead to confusion and may not provide the desired value.
 
 **4.3. Tooling and Integration**
 
@@ -103,7 +103,7 @@
 
 - Use language that is understandable to everyone on the team. Avoid technical jargon and focus on the behavior of the system from the user’s perspective.
 
-**5.3. Keep Scenarios Focused and Concise**
+**5.3. Keep Scenarios Focused and brief**
 
 - Each scenario should test a specific piece of behavior. Avoid writing overly complex or lengthy scenarios. If a scenario becomes too large, consider breaking it down into smaller, more manageable pieces.
 
