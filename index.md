@@ -24,8 +24,6 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 12. [Linux](/linux.md)
 13. [Misc](/misc.md)
 
-<br>
-
 <p>
   <a href="#" onclick="randomPage();" style="text-decoration:none;">
     <button style="padding:10px 15px; font-size:14px; color:white; background-color:#007BFF; border:none; border-radius:5px; cursor:pointer;">
