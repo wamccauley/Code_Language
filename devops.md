@@ -10,5 +10,5 @@
 8. [Automated Testing with Selenium ⏳](/devops/selenium.md)
 9. [Cloud and Microservices ⏳](/devops/cloud-and-microservices.md)
 10. [Redis Deployment and Management ⏳](/devops/redis.md)
-11. [Celery Task Queue Configuration ⏳](/devops/celery-task-queue-configuration.md)
+11. [Celery Task Queue Configuration](/devops/celery-task-queue-configuration.md)
 12. [Serverless Infrastructure ⏳](/devops/serverless-infrastructure.md)
