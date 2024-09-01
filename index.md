@@ -1,9 +1,5 @@
 # Code-Memo
 
-#### About Me
-
-My name is Mohammad Massri, and I’m a software engineer with a deep obsession for software engineering and Linux. My passion extends to systems design and development, and I’m currently aiming for software management roles in the short term. My long-term goal is to become a CTO :D
-
 #### Code Memo
 
 Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a lot! So I created this simple project, which is a collection of my notes on various programming topics, including Python, Django, Django REST Framework (DRF), algorithms and data structures (maybe some leetcode problems), and Linux. This serves as my personal reference to help me recall concepts quickly. I hope you find it useful as well.
