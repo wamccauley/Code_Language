@@ -12,3 +12,4 @@
 10. [Redis Deployment and Management ⏳](/devops/redis.md)
 11. [Celery Task Queue Configuration](/devops/celery-task-queue-configuration.md)
 12. [Serverless Infrastructure ⏳](/devops/serverless-infrastructure.md)
+13. [Kubernetes](/devops/kubernetes.md)

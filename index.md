@@ -19,6 +19,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 11. [Fundamentals of Networking](/networking.md)
 12. [Linux](/linux.md)
 13. [Misc](/misc.md)
+14. [Interview Preparation](/interviews.md)
 
 <p>
   <a href="#" onclick="randomPage();" style="text-decoration:none;">
@@ -48,4 +49,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 2.2.9
+Version: 2.2.10
