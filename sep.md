@@ -17,14 +17,16 @@
 
 1. [Software Development Life Cycle (SDLC)](/sep/sdlc.md)
 2. [SDLC Methodologies](/sep/sdlc-methodologies.md)
-3. [Intellectual Property in Software](/sep/intellectual-property-in-software.md)
-4. [Domain-Driven Design (DDD)](/sep/ddd.md)
-5. [Test-Driven Development (TDD)](/sep/ttt.md)
-6. [Behavior-Driven Development (BDD)](/sep/bdd.md)
-7. [Continuous Integration/Continuous Deployment (CI/CD)](/sep/cicd.md)
-8. [Version Control (Git)](/sep/version-control.md)
-9. [Code Reviews](/sep/code-reviews.md)
-10. [Verification and Validation](/sep/verification-and-validation.md)
+3. [Agile Concept](/sep/agile-concept.md)
+4. [Jira Issue types](/sep/jira-issue-types.md)
+5. [Intellectual Property in Software](/sep/intellectual-property-in-software.md)
+6. [Domain-Driven Design (DDD)](/sep/ddd.md)
+7. [Test-Driven Development (TDD)](/sep/ttt.md)
+8. [Behavior-Driven Development (BDD)](/sep/bdd.md)
+9. [Continuous Integration/Continuous Deployment (CI/CD)](/sep/cicd.md)
+10. [Version Control (Git)](/sep/version-control.md)
+11. [Code Reviews](/sep/code-reviews.md)
+12. [Verification and Validation](/sep/verification-and-validation.md)
 
 ### Architectural Patterns and Design
 

@@ -28,3 +28,7 @@
 26. [Simple WebSockets in Django](./misc/django-simple-websockets.md)
 27. [Remove browsable API in Django](./misc/remove-browsable-api-in-django.md)
 28. [Share files through SSH](./misc/share-files-through-ssh.md)
+29. [Deploying a Python package to PYPI](./misc/deploy-to-pypi.md)
+30. [Codebase Standards](./misc/codebase-standards.md)
+31. [InsecureRequestWarning in Python](./misc/py-insecurerequirestwarning.md)
+32. [Raise error form of response in DRF](./misc/response-error-drf.md)
