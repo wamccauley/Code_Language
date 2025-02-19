@@ -1,7 +1,5 @@
 ### Model Inheritance
 
-Model inheritance in Django allows you to create new models that inherit fields and methods from existing models, which promotes code reuse and helps in organizing related models with shared attributes and behaviors.
-
 #### Types of Model Inheritance
 
 ##### Abstract Base Classes

@@ -10,7 +10,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 2. [Django and Django REST Framework (DRF)](/django.md)
 3. [Data Structures and Algorithms](/dsa.md)
 4. [Software Engineering Principles](/sep.md)
-5. [DevOps and Deployment ⏳](/devops.md)
+5. [DevOps and Deployment](/devops.md)
 6. [System Design and Architecture ⏳](/system-design.md)
 7. [API Design ⏳](/api-design.md)
 8. [Database Management ⏳](/db-management.md)
@@ -19,7 +19,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 11. [Fundamentals of Networking](/networking.md)
 12. [Linux](/linux.md)
 13. [Misc](/misc.md)
-14. [Interview Preparation](/interviews.md)
+14. [Interview Preparation ⏳](/interviews.md)
 
 <p>
   <a href="#" onclick="randomPage();" style="text-decoration:none;">
@@ -49,4 +49,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 2.2.10
+Version: 2.3.0

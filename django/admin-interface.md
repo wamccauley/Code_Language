@@ -23,7 +23,7 @@ This registers `MyModel` with the admin site, allowing you to manage it through 
 
 ### Customizing the Admin Interface
 
-The Django admin interface can be customized to better fit your needs. For example, you can customize the way models are displayed, add search functionality, and filter options. Here's an example of how to customize the admin interface for a model:
+The Django admin interface can be customized to better fit your needs. For example, you can customize the way models are displayed, add search functionality, and filter options:
 
 ```python
 from django.contrib import admin
@@ -45,7 +45,7 @@ In this example:
 
 ### Admin Actions
 
-You can also add custom actions to the admin interface. Admin actions allow you to perform custom tasks on multiple records at once. Here's an example:
+You can also add custom actions to the admin interface. Admin actions allow you to perform custom tasks on multiple records at once:
 
 ```python
 from django.contrib import admin

@@ -48,61 +48,52 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 
 ### Authentication
 
-1. User Authentication and Authorization
-2. Django Authentication System
-3. Login and Logout
-4. Password Management
-5. User Registration
-6. Permissions and Groups
+1. [User Authentication and Authorization](/django/user-authentication-and-authorization.md)
+2. [Password Management](/django/password-management.md)
+5. [User Registration](/django/user-registration.md)
+6. [Permissions and Groups](/django/permissions-and-groups.md)
 
 ### Middleware
 
-1. Understanding Middleware
-2. Built-in Middleware
-3. Custom Middleware
+1. [Understanding Middleware](/django/understanding-middleware.md)
+2. [Built-in Middleware](/django/built-in-middleware.md)
+3. [Custom Middleware](/django/custom-middleware.md)
 
 ### Advanced Topics
 
-1. Django Signals
-2. Caching
-3. Sessions
-4. Environment Variables and Secret Keys
-5. Internationalization and Localization
-6. Management Commands
-7. Django and Asynchronous Views
-8. Working with Databases (Other than SQLite)
-9. Custom User Models
-10. Security Best Practices
+1. [Signals](/django/signals.md)
+2. [Caching](/django/caching.md)
+3. [Sessions](/django/sessions.md)
+4. [Environment Variables and Secret Keys](/django/environment-variables-and-secret-keys.md)
+5. [Internationalization and Localization](/django/internationalization-and-localization.md)
+6. [Management Commands](/django/management-commands.md)
+7. [Asynchronous Views](/django/asynchronous-views.md)
+8. [Working with Databases (Other than SQLite)](/django/working-with-databases.md)
+9. [Custom User Models](/django/custom-user-models.md)
+10. [Security Best Practices](/django/security-best-practices.md)
 
 ### Testing
 
-1. Writing and Running Tests
-2. Testing Tools and Libraries
-3. Testing Models, Views, and Forms
-4. Using the Django Test Client
+1. [Writing and Running Tests](/django/writing-and-running-tests.md)
+2. [Testing Tools and Libraries](/django/testing-tools-and-libraries.md)
+3. [Testing Models, Views, and Forms](/django/testing-models-views-forms.md)
+4. [Using the Django Test Client](/django/using-django-test-client.md)
 
 ### Deployment
 
 1. [Deployment Checklist](/django/deployment-checklist.md)
-2. Deploying Django with WSGI
-3. Deploying to AWS (Elastic Beanstalk, EC2)
-4. Using Docker with Django
-5. Setting Up CI/CD for Django Projects
+2. [Deploying with WSGI](/django/deploying-with-wsgi.md)
+3. [Deploying to AWS (Elastic Beanstalk, EC2)](/django/deploying-to-aws.md)
+4. [Using Docker with Django](/django/docker-with-django.md)
+5. [Setting Up CI/CD](/django/setting-up-cicd.md)
 
 ### Performance Optimization
 
-1. Query Optimization
-2. Using Django Debug Toolbar
-3. Caching Strategies
-4. Database Indexing
-5. Profiling and Monitoring
-
-### Django Channels
-
-1. Introduction to Django Channels
-2. Setting Up Channels
-3. Working with WebSockets
-4. Building Real-Time Applications
+1. [N+1 Query Problem](/django/n+1-query-problem.md)
+2. [Query Optimization](/django/query-optimization.md)
+3. [Using Django Debug Toolbar](/django/using-django-debug-toolbar.md)
+4. [Database Indexing](/django/database-indexing.md)
+5. [Profiling and Monitoring](/django/profiling-and-monitoring.md)
 
 ### Best Practices
 
@@ -219,9 +210,23 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 5. Maintaining DRF Projects
 
 <br>
+
+# Django Auditlog
+
+<i>Nothing to see here yet</i>
+
+<br>
+
+# DRF Spectacular
+
+<i>Nothing to see here yet</i>
+
+<br>
+
 # Channels and WebSockets
 
 <i>Nothing to see here yet</i>
+
 <br>
 
 # Graphene (GraphQL)

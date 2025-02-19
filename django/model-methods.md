@@ -1,47 +1,92 @@
 ### Model Methods
 
-Model methods allows you to add custom methods inside models for additional logic.
+Model methods can be categorized into different types:  
 
-#### Creating Model Methods
+- **Instance Methods** (custom methods defined in the model)  
+- **Class Methods** (usually using `@classmethod`)  
+- **Static Methods** (using `@staticmethod`)  
+- **Manager Methods** (customized queries using `objects`)  
+- **Django Built-in Methods** (like `save()`, `delete()`, etc.)  
 
-To create a method on a Django model, define a function within the model class. Model methods can access and operate on the model's attributes and perform computations based on instance data.
-
-#### Example of Model Methods
-
-##### Example 1: Calculating Total Price
-
-```python
-class Order(models.Model):
-    product = models.CharField(max_length=100)
-    quantity = models.IntegerField()
-    unit_price = models.DecimalField(max_digits=10, decimal_places=2)
-
-    def total_price(self):
-        return self.quantity * self.unit_price
-```
-
-In this example:
-
-- `total_price()` calculates the total price by multiplying `quantity` with `unit_price`.
-
-##### Example 2: Formatting Data
+### **Example Django Model with Various Methods**  
 
 ```python
-from django.utils.text import slugify
+from django.db import models
+from django.utils import timezone
 
-class BlogPost(models.Model):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+class Product(models.Model):
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    stock = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def slug(self):
-        return slugify(self.title)
+    # 1. Instance Method
+    def is_in_stock(self):
+        """Returns True if stock is available"""
+        return self.stock > 0
+
+    # 2. Class Method
+    @classmethod
+    def expensive_products(cls, min_price):
+        """Returns queryset of products above a certain price"""
+        return cls.objects.filter(price__gte=min_price)
+
+    # 3. Static Method
+    @staticmethod
+    def discount_price(price, discount):
+        """Calculate the discounted price"""
+        return price - (price * (discount / 100))
+
+    # 4. Overriding save()
+    def save(self, *args, **kwargs):
+        """Ensure price is always positive before saving"""
+        if self.price < 0:
+            raise ValueError("Price cannot be negative")
+        super().save(*args, **kwargs)
+
+    # 5. Overriding delete()
+    def delete(self, *args, **kwargs):
+        """Override delete to prevent deletion if stock is available"""
+        if self.stock > 0:
+            raise ValueError("Cannot delete a product that is still in stock")
+        super().delete(*args, **kwargs)
+
+    def __str__(self):
+        return self.name
+
+# 6. Custom Manager
+class ProductManager(models.Manager):
+    def in_stock(self):
+        """Returns only products that are in stock"""
+        return self.filter(stock__gt=0)
+
+    def out_of_stock(self):
+        """Returns only products that are out of stock"""
+        return self.filter(stock=0)
+
+# Using the custom manager
+Product.objects = ProductManager()
 ```
 
-- `slug()` generates a URL-friendly slug from the `title` of the blog post using `slugify()`.
+### **Usage of These Methods**
+```python
+# Creating an instance
+product = Product(name="Laptop", price=1200.00, stock=5)
+product.save()
 
-#### Use Cases for Model Methods
+# Instance Method
+print(product.is_in_stock())  # True
 
-- **Data Manipulation:** Calculate derived fields, perform data transformations.
-- **Business Logic:** Implement business rules related to the model's data.
-- **Integration:** Format data for external systems or APIs.
-- **Complex Queries:** Encapsulate complex database queries related to the model.
+# Class Method
+expensive_items = Product.expensive_products(500)
+print(expensive_items)  # Queryset of products priced >= 500
+
+# Static Method
+discounted_price = Product.discount_price(1000, 10)  # 10% discount
+print(discounted_price)  # 900.0
+
+# Manager Method
+in_stock_products = Product.objects.in_stock()
+out_of_stock_products = Product.objects.out_of_stock()
+```

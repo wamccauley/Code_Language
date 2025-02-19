@@ -2,7 +2,7 @@
 
 Queries are created using the Django model's manager, typically accessed through the `objects` attribute. This manager provides methods to retrieve and filter model instances.
 
-##### Example of Creating a Simple Query
+##### Simple Query
 
 Suppose you have an `Author` model and want to retrieve all authors:
 
@@ -21,8 +21,6 @@ authors = Author.objects.all()
 
 You can filter queries to retrieve specific subsets of data using the `filter()` method, which accepts keyword arguments corresponding to model fields.
 
-##### Example of Filtering Queries
-
 Retrieve authors born after January 1, 2000:
 
 ```python
@@ -35,8 +33,6 @@ recent_authors = Author.objects.filter(birth_date__gt='2000-01-01')
 #### Chaining Query Methods
 
 Django allows chaining multiple query methods to refine your queries further.
-
-##### Example of Chaining Query Methods
 
 Retrieve authors with a specific name and birth date after January 1, 2000:
 
@@ -51,8 +47,6 @@ specific_authors = Author.objects.filter(name='John').filter(birth_date__gt='200
 
 To retrieve a single object, use the `get()` method. Note that `get()` raises a `DoesNotExist` exception if no objects match the query and a `MultipleObjectsReturned` exception if more than one object matches.
 
-##### Example of Retrieving a Single Object
-
 Retrieve an author by name:
 
 ```python
@@ -65,8 +59,6 @@ author = Author.objects.get(name='John')
 #### Excluding Objects from QuerySets
 
 Use the `exclude()` method to exclude certain objects from the result set.
-
-##### Example of Excluding Objects
 
 Retrieve authors not born after January 1, 2000:
 

@@ -4,8 +4,6 @@
 
 `F` expressions provide a way to reference model field values directly in queries, allowing you to perform operations between fields and update fields based on their current values.
 
-##### Example of Using F Expressions
-
 Suppose you have a `Book` model with a `num_pages` field, and you want to increase the number of pages by 10 for all books:
 
 ```python
@@ -49,7 +47,7 @@ sales_with_total_value = Sales.objects.annotate(total_value=F('quantity') * F('p
 
 Conditional expressions (`Case` and `When`) allow you to create conditional logic in your queries, similar to SQL `CASE` statements.
 
-##### Example of Using Conditional Expressions
+##### Using Conditional Expressions
 
 Suppose you have an `Employee` model with a `salary` field, and you want to give a 10% bonus to employees with a salary above $50,000 and a 5% bonus to others:
 

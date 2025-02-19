@@ -4,7 +4,7 @@
 
 Field lookups are specified as keyword arguments to the `filter()`, `exclude()`, and `get()` methods. Each lookup argument takes the form `field__lookup=value`.
 
-##### Example of Basic Field Lookups
+##### Basic Field Lookups
 
 Suppose you have an `Author` model and you want to filter authors by name:
 
@@ -12,11 +12,7 @@ Suppose you have an `Author` model and you want to filter authors by name:
 authors_named_john = Author.objects.filter(name='John')
 ```
 
-- Here, `name='John'` is a basic field lookup that matches authors with the name 'John'.
-
 #### Common Field Lookups
-
-Below are some common field lookups that you can use to filter your queries:
 
 ##### `exact`
 
@@ -114,8 +110,6 @@ authors_with_no_birth_date = Author.objects.filter(birth_date__isnull=True)
 
 For more complex queries, you can combine field lookups using `Q` objects.
 
-##### Example of Using `Q` Objects
-
 Retrieve authors named 'John' or born after January 1, 2000:
 
 ```python
@@ -129,8 +123,6 @@ authors = Author.objects.filter(Q(name='John') | Q(birth_date__gt='2000-01-01'))
 #### Negating Field Lookups
 
 You can negate field lookups using the `~` operator with `Q` objects.
-
-##### Example of Negating Field Lookups
 
 Retrieve authors not named 'John':
 

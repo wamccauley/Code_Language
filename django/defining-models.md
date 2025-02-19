@@ -1,8 +1,6 @@
 # Models in Django
 
-A model is a class that represents a table in the database, and each attribute is a field or column of the table. Models are defined in models.py file.
-
-Quick example:
+A model is a class that represents a table in the database, and each attribute is a field or column of the table. Models are defined in models.py file:
 
 ```python
 from django.db import models
@@ -22,7 +20,7 @@ CREATE TABLE myapp_person (
 );
 ```
 
-Notice how the name of the table is myapp_person, which is automatically generated based on app name and model name, and it can be overridden.
+Look how the name of the table is myapp_person, which is automatically generated based on app name and model name, and it can be overridden.
 Also, An id field is added automatically, and it can be overridden too.
 
 #### String Representation `__str__`
@@ -42,3 +40,79 @@ This method is used in the admin interface and other contexts to display object 
 #### Special Methods
 
 Other special methods like `__init__`, `save`, and `delete` can be overridden to customize model behavior.
+
+
+### Full example model:
+```python
+from django.db import models
+from django.utils.translation import gettext_lazy as _
+from django.utils.timezone import now
+import uuid
+
+class FullExampleModel(models.Model):
+    # Primary Key (AutoField is default for ID, but demonstrating explicitly)
+    id = models.AutoField(primary_key=True)
+    
+    # Various Field Types
+    char_field = models.CharField(
+        max_length=255, unique=True, verbose_name=_("Character Field"), help_text=_("A simple character field"))
+    text_field = models.TextField(blank=True, null=True)
+    integer_field = models.IntegerField(default=0)
+    big_integer_field = models.BigIntegerField()
+    float_field = models.FloatField()
+    decimal_field = models.DecimalField(max_digits=10, decimal_places=2)
+    boolean_field = models.BooleanField(default=True)
+    null_boolean_field = models.BooleanField(null=True)
+    date_field = models.DateField(auto_now=False, auto_now_add=False)
+    datetime_field = models.DateTimeField(auto_now=True)
+    time_field = models.TimeField(auto_now_add=True)
+    duration_field = models.DurationField()
+    email_field = models.EmailField()
+    url_field = models.URLField()
+    uuid_field = models.UUIDField(default=uuid.uuid4, unique=True)
+    slug_field = models.SlugField(max_length=100, unique=True)
+    json_field = models.JSONField(null=True, blank=True)
+    file_field = models.FileField(upload_to='uploads/', blank=True, null=True)
+    image_field = models.ImageField(upload_to='images/', blank=True, null=True)
+    
+    # Choices Field
+    class StatusChoices(models.TextChoices):
+        ACTIVE = "active", _("Active")
+        INACTIVE = "inactive", _("Inactive")
+        PENDING = "pending", _("Pending")
+    
+    choice_field = models.CharField(
+        max_length=10, choices=StatusChoices.choices, default=StatusChoices.ACTIVE
+    )
+    
+    # Foreign Key & ManyToMany Relationship
+    foreign_key = models.ForeignKey("self", on_delete=models.CASCADE, null=True, blank=True)
+    many_to_many = models.ManyToManyField("self", blank=True)
+    
+    # Custom save method
+    def save(self, *args, **kwargs):
+        # Custom behavior before saving
+        super().save(*args, **kwargs)
+        # Custom behavior after saving
+    
+    # Custom delete method
+    def delete(self, *args, **kwargs):
+        # Custom behavior before deletion
+        super().delete(*args, **kwargs)
+        # Custom behavior after deletion
+    
+    # Custom string representation
+    def __str__(self):
+        return f"{self.char_field} - {self.uuid_field}"
+    
+    class Meta:
+        db_table = "full_example_model"  # Custom table name
+        verbose_name = "Full Example Model"
+        verbose_name_plural = "Full Example Models"
+        ordering = ["-datetime_field"]  # Default ordering
+        unique_together = ["char_field", "integer_field"]  # Unique constraint across multiple fields
+        indexes = [
+            models.Index(fields=["char_field"]),
+        ]
+        managed = True  # Allows Django to manage the table
+```

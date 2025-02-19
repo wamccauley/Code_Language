@@ -1,22 +1,10 @@
 ### QuerySets
 
-A `QuerySet` is created by accessing the `objects` attribute of a model. The most common way to create a `QuerySet` is by using methods like `all()`, `filter()`, and `exclude()`.
-
-##### Example of Creating a QuerySet
-
-Retrieve all instances of the `Author` model:
-
-```python
-authors = Author.objects.all()
-```
-
-- `Author.objects.all()` returns a `QuerySet` containing all `Author` instances.
-
 #### Lazy Evaluation
 
 QuerySets are lazy, meaning they are not evaluated until you explicitly request the data. This allows for efficient chaining of filters and other operations without hitting the database multiple times.
 
-##### Example of Lazy Evaluation
+##### Lazy Evaluation
 
 ```python
 # No database query yet
@@ -28,8 +16,6 @@ for author in authors:
 ```
 
 #### Common QuerySet Methods
-
-Here are some common QuerySet methods you will use frequently:
 
 ##### `all()`
 

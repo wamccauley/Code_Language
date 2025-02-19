@@ -2,7 +2,7 @@
 
 #### Introduction
 
-In Django, `Meta` options allow you to control various aspects of a model's behavior that aren't related to the data stored in the model fields themselves.
+`Meta` options allow you to control various aspects of a model's behavior that aren't related to the data stored in the model fields themselves.
 
 #### Common Meta Options
 
@@ -69,9 +69,3 @@ In Django, `Meta` options allow you to control various aspects of a model's beha
   ```
 
   - Ensures that each combination of `customer` and `product` is unique in the `Order` model.
-
-#### Advanced Meta Options
-
-- **`indexes` and `constraints`:** Define database indexes and constraints.
-- **`abstract`:** Marks a model as abstract, preventing it from being used to create database tables.
-- **`default_related_name`:** Sets the default related name for reverse relationships.
