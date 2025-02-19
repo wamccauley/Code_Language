@@ -16,10 +16,9 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 8. [Database Management ⏳](/db-management.md)
 9. [Basics of Data Science and Machine Learning ⏳](/ds-and-ml.md)
 10. [Basics of Server Administration ⏳](/ds-and-ml.md)
-11. [Fundamentals of Networking](/networking.md)
-12. [Linux](/linux.md)
-13. [Misc](/misc.md)
-14. [Interview Preparation ⏳](/interviews.md)
+11. [Linux](/linux.md)
+12. [Misc](/misc.md)
+13. [Interview Preparation ⏳](/interviews.md)
 
 <p>
   <a href="#" onclick="randomPage();" style="text-decoration:none;">
@@ -30,14 +29,20 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 </p>
 
 <script>
-  function randomPage() {
-    const pages = [
-      'django.html',
-      'dsa.html',
-      'linux.html',
-    ];
-    const randomPage = pages[Math.floor(Math.random() * pages.length)];
-    window.location.href = randomPage;
+  async function randomPage() {
+    try {
+      const response = await fetch('pages.json');
+      const data = await response.json();
+      
+      if (data.pages.length > 0) {
+        const randomPage = data.pages[Math.floor(Math.random() * data.pages.length)];
+        window.location.href = randomPage;
+      } else {
+        console.error("No pages found");
+      }
+    } catch (error) {
+      console.error("Error fetching pages:", error);
+    }
   }
 </script>
 
@@ -49,4 +54,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 2.3.0
+Version: 2.3.1

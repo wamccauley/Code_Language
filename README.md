@@ -16,10 +16,9 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 8. [Database Management ⏳](/db-management.md)
 9. [Basics of Data Science and Machine Learning ⏳](/ds-and-ml.md)
 10. [Basics of Server Administration ⏳](/ds-and-ml.md)
-11. [Fundamentals of Networking](/networking.md)
-12. [Linux](/linux.md)
-13. [Misc](/misc.md)
-14. [Interview Preparation](/interviews.md)
+11. [Linux](/linux.md)
+12. [Misc](/misc.md)
+13. [Interview Preparation](/interviews.md)
 
 Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :D
 
@@ -27,4 +26,4 @@ Feel free to explore each section and make use of the information as needed. If 
 
 And don't forget to take notes! ❤️
 
-Version: 2.3.0
+Version: 2.3.1
