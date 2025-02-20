@@ -42,7 +42,7 @@ MIDDLEWARE = [
 ]
 ```
 
-- Requires `{% csrf_token %}` in forms for protection.  
+- Requires `{% raw %}{% endraw %}{% csrf_token %}{% endraw %}` in forms for protection.  
 - Blocks POST requests without a valid CSRF token.  
 
 ##### AuthenticationMiddleware  

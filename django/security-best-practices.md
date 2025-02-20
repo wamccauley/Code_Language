@@ -116,7 +116,7 @@ Django includes CSRF protection by default. Ensure all forms include a CSRF toke
 
 ```django
 <form method="post">
-    {% csrf_token %}
+    {% raw %}{% endraw %}{% csrf_token %}{% endraw %}
 </form>
 ```
 

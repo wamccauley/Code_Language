@@ -185,9 +185,9 @@ The toolbar shows:
 - Context variables passed to each template.
 
 ```html
-{% for book in books %}
+{% raw %}{% endraw %}{% for book in books %}{% endraw %}
     <p>{{ book.title }}</p>
-{% endfor %}
+{% raw %}{% endraw %}{% endfor %}{% endraw %}
 ```
 
 With Debug Toolbar, you can check if template rendering is slow due to large context data.

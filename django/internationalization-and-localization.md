@@ -171,28 +171,28 @@ def my_view(request):
 
 Django allows you to use translation in templates as well.
 
-#### `{% trans %}` Template Tag
+#### `{% raw %}{% endraw %}{% trans %}{% endraw %}` Template Tag
 
-The `{% trans %}` tag is used in templates to mark text for translation.
+The `{% raw %}{% endraw %}{% trans %}{% endraw %}` tag is used in templates to mark text for translation.
 
-##### Example of Using `{% trans %}` in Templates
+##### Example of Using `{% raw %}{% endraw %}{% trans %}{% endraw %}` in Templates
 
 ```html
-<h1>{% trans "Welcome to our website!" %}</h1>
+<h1>{% raw %}{% endraw %}{% trans "Welcome to our website!" %}{% endraw %}</h1>
 ```
 
 Django will replace the string with the translated version, depending on the active language.
 
-#### `{% blocktrans %}` Template Tag
+#### `{% raw %}{% endraw %}{% blocktrans %}{% endraw %}` Template Tag
 
-For more complex translations (e.g., text with variables), you can use `{% blocktrans %}`.
+For more complex translations (e.g., text with variables), you can use `{% raw %}{% endraw %}{% blocktrans %}{% endraw %}`.
 
-##### Example of Using `{% blocktrans %}`
+##### Example of Using `{% raw %}{% endraw %}{% blocktrans %}{% endraw %}`
 
 ```html
-{% blocktrans %}
+{% raw %}{% endraw %}{% blocktrans %}{% endraw %}
     Welcome, {{ user.username }}! You have {{ unread_messages }} unread messages.
-{% endblocktrans %}
+{% raw %}{% endraw %}{% endblocktrans %}{% endraw %}
 ```
 
 This allows translation of text that includes dynamic content like variables.

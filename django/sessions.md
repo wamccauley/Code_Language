@@ -197,11 +197,11 @@ def login_view(request):
 Although session data is stored on the server, you can use it in templates by passing session values through the context or directly accessing session data using template tags.
 
 ```html
-{% if request.session.user_id %}
+{% raw %}{% endraw %}{% if request.session.user_id %}{% endraw %}
     <p>Welcome, user {{ request.session.user_id }}!</p>
-{% else %}
+{% raw %}{% endraw %}{% else %}{% endraw %}
     <p>Please log in.</p>
-{% endif %}
+{% raw %}{% endraw %}{% endif %}{% endraw %}
 ```
 
 - This example checks if the session contains the user ID and displays a welcome message if the user is logged in.
