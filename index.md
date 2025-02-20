@@ -35,7 +35,12 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
       const data = await response.json();
       
       if (data.pages.length > 0) {
-        const randomPage = data.pages[Math.floor(Math.random() * data.pages.length)];
+        let randomPage = data.pages[Math.floor(Math.random() * data.pages.length)];
+        
+        if (!randomPage.endsWith('.html')) {
+          randomPage += '.html';
+        }
+
         window.location.href = randomPage;
       } else {
         console.error("No pages found");
