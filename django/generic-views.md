@@ -10,8 +10,6 @@ While Django's built-in generic views are useful, the Django Rest Framework (DRF
 
 `ListAPIView` is used to retrieve a list of objects and return them as JSON.
 
-##### Example of Using ListAPIView
-
 ```python
 from rest_framework.generics import ListAPIView
 from .models import Item
@@ -30,8 +28,6 @@ class ItemListView(ListAPIView):
 
 `RetrieveAPIView` is used to retrieve a single object and return it as JSON.
 
-##### Example of Using RetrieveAPIView
-
 ```python
 from rest_framework.generics import RetrieveAPIView
 from .models import Item
@@ -47,8 +43,6 @@ class ItemDetailView(RetrieveAPIView):
 #### CreateAPIView
 
 `CreateAPIView` is used to create a new object and return the created object as JSON.
-
-##### Example of Using CreateAPIView
 
 ```python
 from rest_framework.generics import CreateAPIView
@@ -66,8 +60,6 @@ class ItemCreateView(CreateAPIView):
 
 `UpdateAPIView` is used to update an existing object and return the updated object as JSON.
 
-##### Example of Using UpdateAPIView
-
 ```python
 from rest_framework.generics import UpdateAPIView
 from .models import Item
@@ -84,8 +76,6 @@ class ItemUpdateView(UpdateAPIView):
 
 `DestroyAPIView` is used to delete an existing object and return a response indicating the deletion status.
 
-##### Example of Using DestroyAPIView
-
 ```python
 from rest_framework.generics import DestroyAPIView
 from .models import Item
@@ -99,8 +89,6 @@ class ItemDeleteView(DestroyAPIView):
 #### Combining Multiple Actions with ViewSets
 
 DRF's `ViewSet` classes allow you to combine multiple actions (list, create, retrieve, update, delete) into a single class.
-
-##### Example of Using a ModelViewSet
 
 ```python
 from rest_framework.viewsets import ModelViewSet
@@ -134,8 +122,6 @@ urlpatterns = router.urls
 #### Customizing Responses
 
 You can customize responses by overriding methods in generic views or viewsets.
-
-##### Example of Customizing a Response
 
 ```python
 from rest_framework.response import Response

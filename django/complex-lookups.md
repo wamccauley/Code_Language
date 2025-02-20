@@ -4,8 +4,6 @@
 
 `Q` objects provide a way to build complex queries by combining multiple conditions with logical operators (`&` for AND, `|` for OR, and `~` for NOT). `Q` objects can be used in methods like `filter()`, `exclude()`, and `get()`.
 
-##### Example of Using Q Objects
-
 Suppose you have an `Author` model and you want to retrieve authors named 'John' or born after January 1, 2000:
 
 ```python
@@ -21,8 +19,6 @@ authors = Author.objects.filter(Q(name='John') | Q(birth_date__gt='2000-01-01'))
 
 You can combine multiple `Q` objects using the `&` and `|` operators to create more complex queries.
 
-##### Example of Combining Q Objects
-
 Retrieve authors named 'John' and born after January 1, 2000:
 
 ```python
@@ -35,8 +31,6 @@ authors = Author.objects.filter(Q(name='John') & Q(birth_date__gt='2000-01-01'))
 #### Negating Q Objects
 
 You can negate `Q` objects using the `~` operator to exclude specific conditions.
-
-##### Example of Negating Q Objects
 
 Retrieve authors not named 'John':
 
@@ -51,8 +45,6 @@ authors = Author.objects.filter(~Q(name='John'))
 
 Django's ORM allows you to perform complex lookups involving related models using double underscores (`__`) to traverse relationships.
 
-##### Example of Complex Lookups with Relationships
-
 Suppose you have `Book` and `Author` models where a book has a foreign key to an author. Retrieve books written by authors named 'John':
 
 ```python
@@ -65,8 +57,6 @@ books_by_john = Book.objects.filter(author__name='John')
 #### Using Aggregation with Complex Lookups
 
 Aggregation functions can be combined with complex lookups to perform calculations on subsets of data.
-
-##### Example of Aggregation with Complex Lookups
 
 Suppose you have an `Order` model with a foreign key to a `Customer` model and you want to calculate the total value of orders for customers from 'New York':
 
@@ -83,8 +73,6 @@ total_value = Order.objects.filter(customer__city='New York').aggregate(Sum('tot
 #### Combining Multiple Complex Lookups
 
 You can combine multiple complex lookups to handle intricate querying scenarios.
-
-##### Example of Combining Multiple Complex Lookups
 
 Suppose you have an `Article` model with a foreign key to an `Author` model, and you want to retrieve articles published in 2021 by authors named 'John' or who have more than 5 articles:
 

@@ -7,8 +7,6 @@ Iterators are objects that implement the iterator protocol, consisting of two me
 
 In Python, any object that implements these methods can be used as an iterator. Iterators are used in `for` loops, comprehensions, and other contexts where sequential or lazy evaluation is required.
 
-Example of a simple iterator:
-
 ```python
 class Counter:
     def __init__(self, start, end):
@@ -45,8 +43,6 @@ Key characteristics of generators:
 
 1. **Generator Functions**: Defined using the `def` keyword with `yield` statements inside the function body.
 
-Example of a generator function:
-
 ```python
 def square_numbers(n):
     for i in range(n):
@@ -59,8 +55,6 @@ for num in gen:
 ```
 
 2. **Generator Expressions**: Similar to list comprehensions but using round brackets `()` instead of square brackets `[]`.
-
-Example of a generator expression:
 
 ```python
 gen_exp = (x ** 2 for x in range(5))
@@ -80,7 +74,7 @@ for num in gen_exp:
 - **`throw()` Method**: Raises an exception at a specific point in the generator.
 - **`close()` Method**: Terminates the generator.
 
-#### Example of using `send()`:
+#### Using `send()`:
 
 ```python
 def accumulator():

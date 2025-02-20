@@ -6,8 +6,6 @@ Django provides built-in utilities for handling password storage, validation, an
 
 Django automatically hashes passwords before storing them in the database using a strong hashing algorithm.  
 
-##### Example of Setting a User’s Password  
-
 ```python
 from django.contrib.auth.models import User
 
@@ -22,8 +20,6 @@ user.save()
 #### Verifying a User’s Password  
 
 Django provides a method to check if a given password matches the stored hashed password.  
-
-##### Example of Checking a User’s Password  
 
 ```python
 from django.contrib.auth import authenticate
@@ -43,8 +39,6 @@ else:
 
 Users can change their password while logged in.  
 
-##### Example of Changing Password Programmatically  
-
 ```python
 user = User.objects.get(username='john')
 user.set_password('newsecurepassword')
@@ -54,8 +48,6 @@ user.save()
 - `set_password('newsecurepassword')` updates the password securely.  
 
 Django also provides built-in views for handling password changes via forms.  
-
-##### Example of Using Django’s Built-in Password Change View  
 
 ```python
 from django.contrib.auth.views import PasswordChangeView
@@ -71,8 +63,6 @@ urlpatterns = [
 #### Resetting a User’s Password  
 
 Django includes views for handling password resets via email.  
-
-##### Example of Using Django’s Built-in Password Reset Views  
 
 ```python
 from django.contrib.auth.views import PasswordResetView, PasswordResetConfirmView
@@ -91,8 +81,6 @@ urlpatterns = [
 
 Django provides `make_password()` to manually hash passwords when needed.  
 
-##### Example of Hashing a Password Manually  
-
 ```python
 from django.contrib.auth.hashers import make_password
 
@@ -105,8 +93,6 @@ print(hashed_password)
 #### Checking Password Strength  
 
 Django provides built-in password validators to enforce password strength requirements.  
-
-##### Example of Enforcing Strong Passwords in `settings.py`  
 
 ```python
 AUTH_PASSWORD_VALIDATORS = [

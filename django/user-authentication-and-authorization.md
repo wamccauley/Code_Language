@@ -6,8 +6,6 @@ Django provides a built-in authentication system that handles user authenticatio
 
 Django’s authentication framework provides functionalities for user login, logout, and password management.  
 
-##### Example of Authenticating a User  
-
 ```python
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
@@ -27,8 +25,6 @@ def user_login(request):
 
 Django provides a built-in `User` model for handling authentication and user-related data.  
 
-##### Example of Creating a User  
-
 ```python
 from django.contrib.auth.models import User
 
@@ -42,8 +38,6 @@ user.save()
 #### Logging Out Users  
 
 Django provides a method to log users out and clear their session.  
-
-##### Example of Logging Out a User  
 
 ```python
 from django.contrib.auth import logout
@@ -60,8 +54,6 @@ def user_logout(request):
 
 Django provides the `@login_required` decorator to restrict access to authenticated users.  
 
-##### Example of Protecting a View  
-
 ```python
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -76,8 +68,6 @@ def dashboard(request):
 #### Checking Permissions  
 
 Django allows checking if a user has specific permissions before allowing access.  
-
-##### Example of Checking Permissions  
 
 ```python
 from django.http import HttpResponse
@@ -95,8 +85,6 @@ def restricted_view(request):
 
 Django supports grouping users to manage permissions efficiently.  
 
-##### Example of Adding a User to a Group  
-
 ```python
 from django.contrib.auth.models import Group, User
 
@@ -111,8 +99,6 @@ user.groups.add(group)
 #### Custom User Model  
 
 Django allows customizing the `User` model for additional fields and functionality.  
-
-##### Example of Creating a Custom User Model  
 
 ```python
 from django.contrib.auth.models import AbstractUser

@@ -12,8 +12,6 @@ Python uses automatic memory management via garbage collection to reclaim memory
 - **`gc` Module**:
   - The `gc` module provides interfaces to the underlying garbage collector, allowing manual control over garbage collection behavior.
 
-Example of disabling garbage collection:
-
 ```python
 import gc
 
@@ -29,8 +27,6 @@ Memory profiling helps identify memory-intensive parts of your code, memory leak
 
 - **Using `memory_profiler`**:
   - The `memory_profiler` package allows you to profile memory usage line by line in Python programs.
-
-Example of using `memory_profiler`:
 
 ```bash
 pip install memory_profiler

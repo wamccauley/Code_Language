@@ -62,7 +62,6 @@ Authorization determines what actions an authenticated user is allowed to perfor
   **Example**:
 
   ```python
-  # Django example of checking permissions in views
   from rest_framework.permissions import IsAuthenticated, DjangoModelPermissions
 
   class MyView(APIView):

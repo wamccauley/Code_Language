@@ -6,8 +6,6 @@
 
 - **Race Conditions**: A race condition occurs when multiple threads access shared data concurrently, and the outcome of the execution depends on the timing or interleaving of their operations.
 
-Example of a race condition:
-
 ```python
 import threading
 

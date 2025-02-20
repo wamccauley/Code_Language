@@ -7,8 +7,6 @@ A context manager is any object that implements the context management protocol:
 1. **`__enter__()`**: Prepares the context and returns the resource to be managed. It is called when entering the `with` block.
 2. **`__exit__(exc_type, exc_val, exc_tb)`**: Cleans up resources after the `with` block exits, even if an exception occurs. It is called upon exiting the `with` block.
 
-#### Example of a Context Manager for File Handling:
-
 ```python
 class FileContextManager:
     def __init__(self, filename, mode):

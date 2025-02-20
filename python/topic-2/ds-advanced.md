@@ -64,8 +64,6 @@ print(c.most_common(2))  # Output: [('apple', 3), ('banana', 2)]
 
 Named tuples are tuples with named fields, providing more readable and self-documenting code.
 
-Example of defining and using a named tuple:
-
 ```python
 from collections import namedtuple
 
@@ -84,8 +82,6 @@ print(p2.x, p2.y)  # Output: 3 4
 ##### Data Classes
 
 Data classes simplify the creation of classes to store data, providing automatic generation of `__init__`, `__repr__`, `__eq__`, and other methods.
-
-Example of defining and using a data class:
 
 ```python
 from dataclasses import dataclass
@@ -111,8 +107,6 @@ print(p2.x, p2.y)  # Output: 3 4
 
 The `heapq` module provides an implementation of the heap queue algorithm, a data structure for efficiently retrieving the smallest (or largest) elements.
 
-Example of using `heapq`:
-
 ```python
 import heapq
 
@@ -130,8 +124,6 @@ while heap:
 ##### `bisect` Module
 
 The `bisect` module provides tools for maintaining a list in sorted order without having to explicitly sort the list each time an element is added or removed.
-
-Example of using `bisect`:
 
 ```python
 import bisect

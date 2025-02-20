@@ -30,8 +30,6 @@ libc.printf(b"Hello from C!\n")
 - **Creating C Extensions**:
   - Write C/C++ code that interfaces with Python's C API (`Python.h`) to define new types, functions, and modules that can be imported and used in Python scripts.
 
-Example of a simple C extension (`examplemodule.c`):
-
 ```c
 #include <Python.h>
 

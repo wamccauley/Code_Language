@@ -68,8 +68,6 @@ With `python-decouple`, environment variables in `.env` files are automatically 
 
 Another common use case for environment variables is configuring database connections. Instead of hardcoding your database credentials, you can set the database settings via environment variables.
 
-##### Example of Using Environment Variables for Database Settings
-
 First, add your database credentials as environment variables:
 
 ```bash

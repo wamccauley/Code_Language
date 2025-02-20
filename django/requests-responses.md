@@ -2,8 +2,6 @@
 
 The `HttpRequest` object encapsulates all HTTP request information. It provides attributes like `method`, `GET`, `POST`, `COOKIES`, `FILES`, and `META` data.
 
-##### Example of Accessing HttpRequest Attributes
-
 ```python
 from django.http import HttpResponse
 
@@ -23,8 +21,6 @@ def my_view(request):
 
 The `HttpResponse` object represents the HTTP response. It contains the content and optional headers to send back to the client.
 
-##### Example of Returning HttpResponse
-
 ```python
 from django.http import HttpResponse
 
@@ -37,8 +33,6 @@ def hello_world(request):
 #### JsonResponse for JSON Responses
 
 The `JsonResponse` class in Django simplifies returning JSON-encoded data as a response.
-
-##### Example of Returning JsonResponse
 
 ```python
 from django.http import JsonResponse
@@ -53,8 +47,6 @@ def api_data(request):
 #### Redirects
 
 Django provides utilities to perform HTTP redirects.
-
-##### Example of Redirecting
 
 ```python
 from django.shortcuts import redirect
@@ -72,8 +64,6 @@ def my_view(request):
 #### Handling File Uploads
 
 Django facilitates handling file uploads with `request.FILES`.
-
-##### Example of Handling File Uploads
 
 ```python
 def handle_uploaded_file(request):

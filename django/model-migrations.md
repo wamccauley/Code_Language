@@ -6,8 +6,6 @@ When you make changes in your models, these changes are not reflected to the dat
 
 To create a migration for model changes, use the `makemigrations` command, which analyzes your models and creates migration files that describe the changes to be applied to your database.
 
-#### Example of Generating Migrations
-
 Suppose you have a `Product` model and decide to add a new field `description`:
 
 1. Define the new field in your model:
@@ -28,8 +26,6 @@ Suppose you have a `Product` model and decide to add a new field `description`:
 #### Applying Migrations
 
 Once migrations are generated, use the `migrate` command to apply them to your database. This command runs through all the migrations and updates the database schema to match the current state of your models.
-
-#### Example of Applying Migrations
 
 To apply the migration created in the previous step:
 

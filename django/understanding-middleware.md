@@ -12,8 +12,6 @@ Every middleware class must implement at least one of the following methods:
 - `process_exception(request, exception)`: Handles exceptions raised by the view.  
 - `process_template_response(request, response)`: Modifies the response before rendering a template.  
 
-##### Example of a Basic Middleware  
-
 ```python
 class SimpleMiddleware:
     def __init__(self, get_response):

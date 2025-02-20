@@ -6,8 +6,6 @@ Handling user registration involves creating a new user, validating input data, 
 
 The `User` model provides a method for creating new users with hashed passwords.  
 
-##### Example of Registering a User  
-
 ```python
 from django.contrib.auth.models import User
 
@@ -21,8 +19,6 @@ user.save()
 #### Using Forms for User Registration  
 
 A `ModelForm` simplifies user registration by handling validation automatically.  
-
-##### Example of a Registration Form  
 
 ```python
 from django import forms
@@ -42,8 +38,6 @@ class RegistrationForm(forms.ModelForm):
 #### Handling Registration in a View  
 
 A view processes the registration form and creates a new user if the input is valid.  
-
-##### Example of a Registration View  
 
 ```python
 from django.shortcuts import render, redirect
@@ -72,8 +66,6 @@ def register(request):
 
 A simple template collects user details and submits the form.  
 
-##### Example of `register.html`  
-
 ```html
 <form method="post">
     &#123;% endraw %&#125;&#123;% csrf_token %&#125;
@@ -88,8 +80,6 @@ A simple template collects user details and submits the form.
 #### Redirecting After Registration  
 
 After successful registration, users can be redirected to a dashboard or login page.  
-
-##### Example of Redirecting After Registration  
 
 ```python
 return redirect('dashboard')  # Redirects to the user's dashboard

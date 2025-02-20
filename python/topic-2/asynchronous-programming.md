@@ -5,8 +5,6 @@
 - **`async def`**: Declares a coroutine function, which can use `await` to suspend its execution until the result of an asynchronous operation is available.
 - **`await`**: Suspends the execution of the coroutine until the awaited coroutine or Future completes and returns the result.
 
-Example of an asynchronous coroutine function:
-
 ```python
 import asyncio
 

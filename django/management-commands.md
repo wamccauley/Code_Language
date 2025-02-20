@@ -29,8 +29,6 @@ myapp/
 
 To create a management command, you subclass `BaseCommand` from `django.core.management.base`. Then, you define the `handle()` method, which will contain the code that runs when the command is executed.
 
-##### Example of a Custom Management Command
-
 ```python
 # myapp/management/commands/my_custom_command.py
 
@@ -196,8 +194,6 @@ This command attempts to connect to the database and prints an appropriate messa
 ### Using the Command in Django Scripts
 
 Custom management commands can also be executed programmatically within your Django application or from a script.
-
-##### Example of Running a Command Programmatically
 
 ```python
 # Run custom command from within Django views or scripts

@@ -41,8 +41,6 @@ urlpatterns = [
 
 FBVs can capture URL parameters and use them in the view function.
 
-##### Example of Using URL Parameters
-
 ```python
 from django.http import HttpResponse
 
@@ -61,8 +59,6 @@ path('greet/<str:name>/', views.greet, name='greet')
 #### Handling 404 Errors in FBVs
 
 You can raise a `Http404` exception to handle not found errors.
-
-##### Example of Handling 404 Errors
 
 ```python
 from django.http import Http404

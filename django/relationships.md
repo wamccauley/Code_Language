@@ -6,8 +6,6 @@ Relationships between models allow you to define how different data models are i
 
 The `ForeignKey` relationship establishes a many-to-one association between two models, where each instance of the child model (with the foreign key) relates to exactly one instance of the parent model.
 
-##### Example of ForeignKey Relationship
-
 Suppose you have `Author` and `Book` models where each book is authored by one author:
 
 ```python
@@ -26,8 +24,6 @@ class Book(models.Model):
 
 The `OneToOneField` relationship is a specific type of `ForeignKey` where each instance of the child model is associated with exactly one instance of the parent model.
 
-##### Example of OneToOneField Relationship
-
 Suppose you have a `Profile` model linked to a `User` model:
 
 ```python
@@ -44,8 +40,6 @@ class Profile(models.Model):
 #### ManyToManyField Relationship
 
 The `ManyToManyField` relationship allows for a many-to-many association between two models, where each instance of one model can be related to multiple instances of another model.
-
-##### Example of ManyToManyField Relationship
 
 Suppose you have `Student` and `Course` models where students can enroll in multiple courses:
 

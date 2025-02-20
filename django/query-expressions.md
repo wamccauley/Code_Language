@@ -15,8 +15,6 @@ Book.objects.update(num_pages=F('num_pages') + 10)
 
 - `F('num_pages') + 10` references the current value of `num_pages` and adds 10 to it.
 
-##### Example of Comparing Fields with F Expressions
-
 Retrieve books where the number of pages is greater than the number of chapters:
 
 ```python
@@ -29,8 +27,6 @@ books_with_more_pages = Book.objects.filter(num_pages__gt=F('num_chapters'))
 #### Annotating QuerySets
 
 The `annotate()` method allows you to add calculated fields to your QuerySets, enabling you to perform complex aggregations and computations.
-
-##### Example of Annotating QuerySets
 
 Suppose you have a `Sales` model with `quantity` and `price` fields, and you want to calculate the total sales value for each sale:
 
@@ -70,8 +66,6 @@ employees_with_bonus = Employee.objects.annotate(
 
 Value expressions (`Value`) allow you to include literal values in your queries.
 
-##### Example of Using Value Expressions
-
 Retrieve all authors and annotate them with a literal value:
 
 ```python
@@ -86,8 +80,6 @@ authors_with_status = Author.objects.annotate(status=Value('active', output_fiel
 #### Combining Expressions
 
 You can combine multiple expressions to create complex queries.
-
-##### Example of Combining Expressions
 
 Suppose you have an `Order` model with `quantity` and `unit_price` fields, and you want to calculate the total cost for each order and filter orders with a total cost above $100:
 

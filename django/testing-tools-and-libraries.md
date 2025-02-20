@@ -10,8 +10,6 @@ Django’s built-in testing framework is based on **Python’s `unittest` module
 
 Django tests inherit from Python’s standard `unittest` module.  
 
-Example of a basic test using `unittest`:  
-
 ```python
 import unittest
 

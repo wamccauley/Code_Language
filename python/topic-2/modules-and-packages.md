@@ -20,8 +20,6 @@ def subtract(a, b):
 
 - **Using a Module**: Modules are imported using the `import` statement.
 
-Example of using the `math_operations` module:
-
 ```python
 # main.py
 
@@ -48,8 +46,6 @@ my_package/
 ```
 
 - **Using a Package**: Packages are imported using dot notation.
-
-Example of using modules from a package:
 
 ```python
 # main.py
@@ -97,8 +93,6 @@ python setup.py sdist
 ```
 
 4. **Distribution**: Distribute the package via PyPI (Python Package Index) or other repositories for installation using `pip`.
-
-#### Example of Installing a Package
 
 ```bash
 pip install my_package

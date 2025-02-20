@@ -17,8 +17,6 @@ SQL transactions are sequences of operations performed as a single logical unit 
 - **SAVEPOINT**: Sets a point within a transaction to which you can roll back without affecting the entire transaction.
 - **RELEASE SAVEPOINT**: Removes a savepoint, making it no longer available for a rollback.
 
-#### Example of a Transaction
-
 ```sql
 BEGIN TRANSACTION;
 

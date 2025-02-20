@@ -6,8 +6,6 @@ Class-Based Views (CBVs) in Django offer a more modular and reusable way to hand
 
 A basic class-based view inherits from `View` and defines a method corresponding to the HTTP method (e.g., `get`, `post`).
 
-##### Example of a Simple Class-Based View
-
 ```python
 from django.http import HttpResponse
 from django.views import View
@@ -23,8 +21,6 @@ class HelloWorldView(View):
 #### URL Configuration for CBVs
 
 In the `urls.py` file, use the `as_view()` method to include CBVs in URL patterns.
-
-##### Example of URL Configuration
 
 ```python
 from django.urls import path

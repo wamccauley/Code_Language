@@ -63,8 +63,6 @@ You can modify this depending on the default language you want to serve.
 
 To translate strings in Django, you use the `gettext` (abbreviated `_`) function. This is how you mark strings for translation:
 
-##### Example of Marking Strings for Translation
-
 ```python
 from django.utils.translation import gettext as _
 
@@ -116,8 +114,6 @@ Django provides support for formatting dates, times, numbers, and currencies acc
 
 Django uses the `date` and `time` template filters to format dates and times in a way that respects the current locale.
 
-##### Example of Formatting Dates
-
 ```html
 <p>{{ user.date_joined|date:"l, F j, Y" }}</p>
 ```
@@ -127,8 +123,6 @@ This will format the `date_joined` field according to the locale. In the French 
 #### Formatting Numbers and Currency
 
 Django uses the `floatformat` and `localize` template filters to format numbers and currencies according to the locale.
-
-##### Example of Formatting Numbers
 
 ```html
 <p>{{ product.price|localize }}</p>
@@ -154,8 +148,6 @@ TIME_ZONE = 'UTC'  # Default time zone
 
 Django automatically converts times to the user's time zone, based on their preference. To set the user’s time zone, you can use `django.utils.timezone.activate()`.
 
-##### Example of Activating a User’s Time Zone
-
 ```python
 from django.utils import timezone
 
@@ -175,8 +167,6 @@ Django allows you to use translation in templates as well.
 
 The `&#123;% endraw %&#125;&#123;% trans %&#125;` tag is used in templates to mark text for translation.
 
-##### Example of Using `&#123;% endraw %&#125;&#123;% trans %&#125;` in Templates
-
 ```html
 <h1>&#123;% endraw %&#125;&#123;% trans "Welcome to our website!" %&#125;</h1>
 ```
@@ -186,8 +176,6 @@ Django will replace the string with the translated version, depending on the act
 #### `&#123;% endraw %&#125;&#123;% blocktrans %&#125;` Template Tag
 
 For more complex translations (e.g., text with variables), you can use `&#123;% endraw %&#125;&#123;% blocktrans %&#125;`.
-
-##### Example of Using `&#123;% endraw %&#125;&#123;% blocktrans %&#125;`
 
 ```html
 &#123;% endraw %&#125;&#123;% blocktrans %&#125;
@@ -206,8 +194,6 @@ Django provides a way to change the language on a per-request basis, usually bas
 #### Step 1: Set the Language for a User
 
 You can change the language for the user by using the `set_language` view provided by Django.
-
-##### Example of Using `set_language`
 
 ```python
 from django.utils.translation import activate

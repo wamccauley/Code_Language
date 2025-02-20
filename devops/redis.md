@@ -941,7 +941,7 @@ Redis offers multiple persistence mechanisms to ensure data durability, even aft
 - **Creating Backups:**
 
   - To create a backup, you can simply copy the RDB file (`dump.rdb`) or AOF file (`appendonly.aof`) to a secure location. This can be done manually or through an automated process.
-  - Example of copying the RDB file:
+  - Copying the RDB file:
     ```bash
     cp /var/lib/redis/dump.rdb /backup/location/
     ```
@@ -952,7 +952,7 @@ Redis offers multiple persistence mechanisms to ensure data durability, even aft
 
 - **Restoring Backups:**
   - To restore from a backup, stop the Redis server, replace the existing RDB or AOF file with your backup copy, and then restart the Redis server.
-  - Example of restoring an RDB backup:
+  - Restoring an RDB backup:
     ```bash
     cp /backup/location/dump.rdb /var/lib/redis/dump.rdb
     sudo systemctl restart redis

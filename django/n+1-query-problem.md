@@ -11,7 +11,6 @@ In total, this results in **N+1 queries** instead of an optimized **2 queries**.
 
 ---
 
-## **Example of the N+1 Query Problem in Django**
 Let's say we have two models:
 
 ```python

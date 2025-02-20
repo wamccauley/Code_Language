@@ -792,8 +792,6 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ### Example Docker Compose File
 
-Here is an example of a simple Docker Compose file for a web application with an Nginx web server and a PostgreSQL database:
-
 ```yaml
 version: '3.8'
 

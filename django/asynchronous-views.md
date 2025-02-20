@@ -12,8 +12,6 @@ Django 3.1 introduced support for asynchronous views, meaning you can write view
 
 Asynchronous views are defined using the `async def` syntax, just like normal Python async functions. Instead of returning a traditional HTTP response, these views can leverage asynchronous features to perform non-blocking operations.
 
-##### Example of an Asynchronous View
-
 ```python
 # views.py
 
@@ -53,7 +51,7 @@ Asynchronous views are ideal for situations where:
 
 While Django's ORM does not yet support asynchronous database queries natively, you can still use asynchronous views for non-blocking operations with external libraries. For example, you could use `databases`, `ormar`, or `tortoise-orm` for async database handling in Django.
 
-#### Example Using `databases` for Async DB Operations
+#### Using `databases` for Async DB Operations
 
 ```python
 # views.py
@@ -79,8 +77,6 @@ Here, you are using `databases` library to handle async DB queries inside an asy
 ### Handling Async Tasks Concurrently
 
 For more complex asynchronous workflows, you can leverage Python’s `asyncio` library to handle multiple tasks concurrently. For instance, if you need to call multiple APIs at once, you can use `asyncio.gather` to concurrently execute multiple async tasks.
-
-#### Example of Concurrent Async Tasks
 
 ```python
 # views.py
@@ -114,8 +110,6 @@ Here:
 ### Asynchronous Views with Django Channels
 
 If you're working with WebSockets, long-running connections, or need to handle real-time data, Django Channels allows for advanced asynchronous capabilities. With Channels, you can create websockets, background tasks, and other long-lived connections that work asynchronously.
-
-#### Example of WebSocket with Django Channels
 
 ```python
 # consumers.py
