@@ -37,9 +37,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
       if (data.pages.length > 0) {
         let randomPage = data.pages[Math.floor(Math.random() * data.pages.length)];
         
-        if (!randomPage.endsWith('.html')) {
-          randomPage += '.html';
-        }
+        randomPage = randomPage.replace(/\.md$/, '') + '.html';
 
         window.location.href = randomPage;
       } else {
@@ -50,6 +48,7 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
     }
   }
 </script>
+
 
 <br>
 
