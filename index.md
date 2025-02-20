@@ -58,3 +58,6 @@ Feel free to explore each section and make use of the information as needed. If 
 And don't forget to take notes! ❤️
 
 Version: 2.3.3
+
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=19162042&style=0007&nbdigits=5&type=ip&initCount=25" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
