@@ -76,13 +76,13 @@ A simple template collects user details and submits the form.
 
 ```html
 <form method="post">
-    {% raw %}{% endraw %}{% csrf_token %}{% endraw %}
+    &#123;% endraw %&#125;&#123;% csrf_token %&#125;
     {{ form.as_p }}
     <button type="submit">Register</button>
 </form>
 ```
 
-- `{% raw %}{% endraw %}{% csrf_token %}{% endraw %}` prevents CSRF attacks.  
+- `&#123;% endraw %&#125;&#123;% csrf_token %&#125;` prevents CSRF attacks.  
 - `form.as_p` renders form fields with labels.  
 
 #### Redirecting After Registration  

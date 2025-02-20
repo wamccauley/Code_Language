@@ -123,24 +123,24 @@ MIDDLEWARE = [
 
 Django also supports caching fragments of templates, allowing you to cache only parts of a page. This can be useful when parts of the page change frequently, but other sections remain static.  
 
-##### Using `{% raw %}{% endraw %}{% cache %}{% endraw %}` Template Tag  
+##### Using `&#123;% endraw %&#125;&#123;% cache %&#125;` Template Tag  
 
-The `{% raw %}{% endraw %}{% cache %}{% endraw %}` tag can be used to cache specific sections of a template. You specify a cache key and a timeout. The block of template code inside the tag will be cached for the specified duration.  
+The `&#123;% endraw %&#125;&#123;% cache %&#125;` tag can be used to cache specific sections of a template. You specify a cache key and a timeout. The block of template code inside the tag will be cached for the specified duration.  
 
 ```html
-{% raw %}{% endraw %}{% load cache %}{% endraw %}
+&#123;% endraw %&#125;&#123;% load cache %&#125;
 
-{% raw %}{% endraw %}{% cache 600 my_cache_key %}{% endraw %}
+&#123;% endraw %&#125;&#123;% cache 600 my_cache_key %&#125;
     <h1>Latest News</h1>
     <ul>
-        {% raw %}{% endraw %}{% for article in articles %}{% endraw %}
+        &#123;% endraw %&#125;&#123;% for article in articles %&#125;
             <li>{{ article.title }}</li>
-        {% raw %}{% endraw %}{% endfor %}{% endraw %}
+        &#123;% endraw %&#125;&#123;% endfor %&#125;
     </ul>
-{% raw %}{% endraw %}{% endcache %}{% endraw %}
+&#123;% endraw %&#125;&#123;% endcache %&#125;
 ```
 
-- This will cache the block of template code inside the `{% raw %}{% endraw %}{% cache %}{% endraw %}` tag for 10 minutes. After 10 minutes, the cache will expire, and Django will re-render the block.  
+- This will cache the block of template code inside the `&#123;% endraw %&#125;&#123;% cache %&#125;` tag for 10 minutes. After 10 minutes, the cache will expire, and Django will re-render the block.  
 - `my_cache_key` can be any unique string to identify the cached block.  
 
 #### Low-Level Caching  
@@ -194,7 +194,7 @@ value = cache.get('my_key', version=1)
 
 #### Cache in Templates  
 
-In addition to using the `{% raw %}{% endraw %}{% cache %}{% endraw %}` tag for template-level caching, you can also use Django’s `cache.get()` and `cache.set()` methods within your views to pass cached data into templates.
+In addition to using the `&#123;% endraw %&#125;&#123;% cache %&#125;` tag for template-level caching, you can also use Django’s `cache.get()` and `cache.set()` methods within your views to pass cached data into templates.
 
 ```python
 from django.core.cache import cache
