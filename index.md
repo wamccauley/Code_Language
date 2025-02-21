@@ -1,4 +1,12 @@
 # Code Language
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+
+<div id="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <ul id="search-results"></ul>
+        </div>
+
+<script src="script.js"></script>
 
 #### Code Language
 
