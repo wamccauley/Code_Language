@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
             results.forEach(function(result) {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
-                link.href = result.textContent; // URL from the index
-                link.textContent = result.ref; // Or you could fetch the title from your pages.json
+                link.href = result.ref; // URL from the index
+                link.textContent = result.ref.split('/').pop(); // This splits the result and returns only the filename
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
             });
