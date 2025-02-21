@@ -1,8 +1,8 @@
-# Code-Memo
+# Code Language
 
-#### Code Memo
+#### Code Language
 
-Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a lot! So I created this simple project, which is a collection of my notes on various programming topics, including Python, Django, Django REST Framework (DRF), algorithms and data structures (maybe some leetcode problems), and Linux. This serves as my personal reference to help me recall concepts quickly. I hope you find it useful as well.
+Welcome to  [Code Language](https://wamccauley.github.io/)! You will learn about many different languages here. These languages are, Python, Java, HTML, CSS, JavaScript, and Django.
 
 ## Table of Contents
 
@@ -20,44 +20,8 @@ Welcome to my [Code Memo](https://mouhamaddev.github.io/Code-Memo/)! I forget a 
 12. [Misc](/misc.md)
 13. [Interview Preparation ⏳](/interviews.md)
 
-<p>
-  <a href="#" onclick="randomPage();" style="text-decoration:none;">
-    <button style="padding:10px 15px; font-size:14px; color:white; background-color:#007BFF; border:none; border-radius:5px; cursor:pointer;">
-      Take Me to a Random Page &nbsp; 🎲
-    </button>
-  </a>
-</p>
 
-<script>
-  async function randomPage() {
-    try {
-      const response = await fetch('pages.json');
-      const data = await response.json();
-      
-      if (data.pages.length > 0) {
-        let randomPage = data.pages[Math.floor(Math.random() * data.pages.length)];
-        
-        randomPage = randomPage.replace(/\.md$/, '') + '.html';
 
-        window.location.href = randomPage;
-      } else {
-        console.error("No pages found");
-      }
-    } catch (error) {
-      console.error("Error fetching pages:", error);
-    }
-  }
-</script>
 
-<br>
+Version: 1
 
-Note: This project is a bunch of personal notes. While you may find them useful, it's intended more as a quick reference rather than a learning resource, ideal for a brief review 5 minutes before your next interview :D
-
-Feel free to explore each section and make use of the information as needed. If you have any suggestions or contributions, please don't hesitate to create a pull request or open an issue.
-
-And don't forget to take notes! ❤️
-
-Version: 2.3.3
-
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=19162042&style=0007&nbdigits=5&type=ip&initCount=25" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
