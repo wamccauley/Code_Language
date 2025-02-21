@@ -10,10 +10,12 @@
     window.location.href = this.href; // Navigate to the clicked link
 });
 >
+
 <div id="search-container">
             <input type="text" id="search-input" placeholder="Search...">
             <ul id="search-results"></ul>
         </div>
+
 <script src="script.js"></script>
 
 #### Code Language
