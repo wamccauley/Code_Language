@@ -1,14 +1,19 @@
 # Code Language
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <base href="https://wamccauley.github.io/Code_Language/">
-
-
+<script link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default navigation
+    searchInput.value = ''; // Clear the search input
+    searchResults.innerHTML = ''; // Clear the search results
+    window.location.href = this.href; // Navigate to the clicked link
+});
+>
 <div id="search-container">
             <input type="text" id="search-input" placeholder="Search...">
             <ul id="search-results"></ul>
         </div>
-
 <script src="script.js"></script>
 
 #### Code Language
