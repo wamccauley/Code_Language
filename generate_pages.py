@@ -13,11 +13,6 @@ for root, _, files in os.walk(root_dir):
         if file.endswith(".md"):
             relative_path = os.path.relpath(os.path.join(root, file), root_dir)
             url = relative_path.replace("\\", "/").replace(".md", ".html")  # Correct URL
-            
-            # Remove duplicate segments from the URL
-            url_parts = url.split('/')
-            url = '/'.join(dict.fromkeys(url_parts))  # This removes duplicates while preserving order
-            
             pages.append(url)
 
             # Read the markdown content and convert to HTML (for indexing)
