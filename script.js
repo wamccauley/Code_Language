@@ -48,17 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
             results.forEach(function(result) {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
-                
+
+                // Construct link text that includes the path
                 let href = result.ref;
-                const baseUrl = 'https://wamccauley.github.io/Code_Language/';
-
-                if (href.startsWith(baseUrl)) {
-                    href = href.substring(baseUrl.length);
-                }
-
-                link.href = href;
-                link.textContent = href.split('/').pop().replace('.html', '');
-
+                let parts = href.split('/');
+                let filename = parts.pop();
+                let breadcrumbs = parts.join(' > ');
+                link.href = href; // URL from the index
+                link.textContent = `${breadcrumbs} > ${filename.replace('.html', '')}`;
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
             });
