@@ -26,7 +26,7 @@ for root, _, files in os.walk(root_dir):
 
             # Create a document for the search index
             documents.append({
-                "url": url,  # Store URL for linking
+                "url": root.replace(root_dir, "") + "/" + url,  # Store URL for linking
                 "title": os.path.splitext(file)[0],  # Use filename (without extension) as title
                 "body": html_content,  # Store the HTML content for searching
             })
