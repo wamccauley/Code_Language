@@ -8,8 +8,7 @@
     searchInput.value = ''; // Clear the search input
     searchResults.innerHTML = ''; // Clear the search results
     window.location.href = this.href; // Navigate to the clicked link
-});
->
+});>
 
 <div id="search-container">
             <input type="text" id="search-input" placeholder="Search...">
