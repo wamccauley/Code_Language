@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
             searchResults.innerHTML = '<li>Error loading search index. Please check the console.</li>';
         });
 
-
     // Function to perform the search
     function performSearch(query) {
         searchResults.innerHTML = ''; // Clear previous results
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-
         const results = index.search(query); // Perform the search
 
         if (results.length === 0) {
@@ -50,8 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
             results.forEach(function(result) {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
-                link.href = result.ref; // URL from the index
-                link.textContent = result.ref; // Or you could fetch the title from your pages.json
+
+                // Extract the relevant part of the URL, assuming it starts after "Code_Language/"
+                let href = result.ref;
+                const baseUrl = 'https://wamccauley.github.io/Code_Language/'; // Replace with your actual base URL
+
+                  if (href.startsWith(baseUrl)) {
+                      href = href.substring(baseUrl.length);
+                  }
+
+                link.href = href;  // URL from the index, properly formatted
+                link.textContent = href.split('/').pop().replace('.html', ''); // Show filename without extension
+
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
             });
