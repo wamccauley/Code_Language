@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
             results.forEach(function(result) {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
-
-                // Construct link text that includes the path
+               // Create URL before path and filename to text can populate for URL to generate
                 let href = result.ref;
                 let parts = href.split('/');
                 let filename = parts.pop();
                 let breadcrumbs = parts.join(' > ');
+
                 link.href = href; // URL from the index
                 link.textContent = `${breadcrumbs} > ${filename.replace('.html', '')}`;
                 listItem.appendChild(link);
