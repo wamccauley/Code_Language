@@ -17,12 +17,3 @@ multi-line comment
 x = 5
 ```
 
-Test
-```python
-"""
-This is a
-multi-line comment
-"""
-x = 5
-```
-
