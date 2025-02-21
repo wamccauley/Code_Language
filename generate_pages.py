@@ -40,10 +40,10 @@ print("pages.json updated!")
 
 # Build Lunr.js index and save to search_index.json
 def build_lunr_index(documents):
-    idx = lunr.Lunr(
-        ref="url",  # Field used as the unique identifier
-        fields=("title", "body"),
-        documents=documents,
+    idx = lunr.lunr(
+        ref='url',
+        fields=('title', 'body'),
+        documents=documents
     )
     return idx
 
