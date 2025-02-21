@@ -49,19 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
                 
-                // Extract the relevant part of the URL, assuming it starts after "Code_Language/"
                 let href = result.ref;
-                const baseUrl = 'https://wamccauley.github.io/Code_Language/'; // Replace with your actual base URL
+                const baseUrl = 'https://wamccauley.github.io/Code_Language/';
 
-                // Modified this to no longer have base URL and other values, so that it doesn't get confusing 
                 if (href.startsWith(baseUrl)) {
                     href = href.substring(baseUrl.length);
-                } else {
-                    href = result.ref
-                  }
+                }
 
-                link.href = href;  // URL from the index, properly formatted
-                link.textContent = href.split('/').pop().replace('.html', ''); // Show filename without extension
+                link.href = href;
+                link.textContent = href.split('/').pop().replace('.html', '');
 
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
