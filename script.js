@@ -56,9 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 link.href = href; // URL from the index
                 link.textContent = `${breadcrumbs} > ${filename.replace('.html', '')}`;
-                 link.addEventListener('click', function() {
+                 link.addEventListener('click', function(event) {
+                    event.preventDefault();  // Prevent default navigation
                     searchInput.value = '';  // Clear the search input
                     searchResults.innerHTML = ''; // Clear the search results
+                    window.location.href = href; // Navigate to the link
                 });
 
                 listItem.appendChild(link);
