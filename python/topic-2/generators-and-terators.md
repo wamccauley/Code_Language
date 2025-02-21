@@ -91,3 +91,5 @@ print(acc.send(1))  # Output: 1
 print(acc.send(2))  # Output: 3
 acc.close()
 ```
+
+[Go Back](javascript:history.go(-1))

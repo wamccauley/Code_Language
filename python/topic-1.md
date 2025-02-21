@@ -11,3 +11,5 @@
 9. [Lambda Functions](./topic-1/lambda.md)
 10. [Regular Expressions](./topic-1/regular-expressions.md)
 11. [Custom Errors](./topic-1/custom-errors.md)
+
+[Go Back](javascript:history.go(-1))

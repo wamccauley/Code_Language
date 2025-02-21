@@ -50,3 +50,5 @@ if response['some_id'] and response:
 ```
 
 In this case, Python will attempt to access `response['some_id']` before checking if `response` is not `None`, which can result in a `TypeError` if `response` is `None`. Always ensure that the `None` check comes before accessing keys in the dictionary.
+
+[Go Back](javascript:history.go(-1))

@@ -173,3 +173,5 @@ context.execute_strategy()  # Output: Executing strategy B
 - **Flexibility**: Enables flexible object creation and behavior customization.
 - **Reusability**: Promotes code reuse and maintainability through structured design patterns.
 - **Scalability**: Facilitates scaling of applications by managing complexity and improving modularity.
+
+[Go Back](javascript:history.go(-1))

@@ -81,3 +81,5 @@ Execution of 'some_function' took 2.0006470680236816 seconds
           pass
       return wrapper
   ```
+
+[Go Back](javascript:history.go(-1))

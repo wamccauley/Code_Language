@@ -15,3 +15,5 @@
 13. [Concurrency Patterns and Best Practices](./topic-2/concurrency-patterns-and-best-practices.md)
 14. [Advanced Python Patterns](./topic-2/advanced-python-patterns.md)
 15. [Python Internals and CPython](./topic-2/python-internals-and-cpython.md)
+
+[Go Back](javascript:history.go(-1))

@@ -7,3 +7,5 @@ names = ["John", "Charles", "Smith"]
 combined_string = " ".join(names)
 print(combined_string)  # Output: "John Charles Smith"
 ```
+
+[Go Back](javascript:history.go(-1))

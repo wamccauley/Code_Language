@@ -32,3 +32,5 @@
 30. [Codebase Standards](./misc/codebase-standards.md)
 31. [InsecureRequestWarning in Python](./misc/py-insecurerequirestwarning.md)
 32. [Raise error form of response in DRF](./misc/response-error-drf.md)
+
+[Go Back](javascript:history.go(-1))

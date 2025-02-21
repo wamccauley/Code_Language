@@ -110,3 +110,5 @@
    with open('example.bin', 'wb') as file:
        file.write(b'\x00\x01\x02')
    ```
+
+[Go Back](javascript:history.go(-1))

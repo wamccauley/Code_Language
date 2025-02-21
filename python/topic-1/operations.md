@@ -229,3 +229,5 @@ print(x)  # 8
   if all(conditions):
       print("All conditions are true")
   ```
+
+[Go Back](javascript:history.go(-1))

@@ -67,3 +67,5 @@ The most effective approach to solving coding problems combines both problem-sol
 ### Tries
 
 1. [Implement Trie (Prefix Tree)](/leetcode/implement-trie-prefix-tree.md)
+
+[Go Back](javascript:history.go(-1))

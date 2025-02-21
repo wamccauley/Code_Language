@@ -31,3 +31,5 @@ print(square(5))  # Output: 25
   product = reduce(lambda x, y: x * y, nums)
   print(product)  # Output: 120
   ```
+
+[Go Back](javascript:history.go(-1))

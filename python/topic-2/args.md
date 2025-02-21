@@ -102,3 +102,5 @@ In this decorator example:
 - `log_arguments` decorates `calculate_total`.
 - `wrapper` in `log_arguments` prints all positional and keyword arguments passed to `calculate_total`.
 - `calculate_total` computes a total based on positional arguments and keyword arguments (`discount_rate` and any `extra_*` kwargs).
+
+[Go Back](javascript:history.go(-1))

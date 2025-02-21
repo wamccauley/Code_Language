@@ -138,3 +138,5 @@ del person.age
 - **Maintainability**: Consistent and idiomatic code is easier to maintain and extend.
 - **Efficiency**: List comprehensions and generator expressions can be more efficient in terms of execution time and memory usage.
 - **Encapsulation**: Using properties helps encapsulate data, providing controlled access and validation for instance variables.
+
+[Go Back](javascript:history.go(-1))

@@ -182,3 +182,5 @@ python -m memory_profiler example.py
 - **Debugging**: Provides insights into code behavior, helping identify and fix bugs efficiently.
 - **Profiling**: Helps understand code performance, guiding optimization efforts for faster execution and reduced resource usage.
 - **Memory Analysis**: Identifies memory usage patterns and leaks, ensuring efficient memory management.
+
+[Go Back](javascript:history.go(-1))

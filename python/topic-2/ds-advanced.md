@@ -143,3 +143,5 @@ print(sorted_list)  # Output: [1, 2, 3, 4, 5, 7, 9]
 - **Efficiency**: Enhances performance through optimized algorithms and data manipulation techniques.
 - **Readability**: Provides clearer and more expressive code using named tuples, data classes, and specialized container types.
 - **Functionality**: Offers additional functionalities like counting, queueing, and sorting that aren't available in standard Python data structures.
+
+[Go Back](javascript:history.go(-1))

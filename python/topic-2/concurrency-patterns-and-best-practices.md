@@ -123,3 +123,5 @@ for t in threads:
 - **Improved Performance**: Utilizes multiple cores and handles tasks concurrently, enhancing application responsiveness.
 - **Avoids Race Conditions**: Ensures data integrity by preventing race conditions through synchronization.
 - **Scalability**: Designs applications to efficiently scale with increasing workload and parallelism.
+
+[Go Back](javascript:history.go(-1))

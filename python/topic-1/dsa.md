@@ -313,3 +313,5 @@ squares = {x: x**2 for x in range(10)}
   default_dict = defaultdict(int)
   default_dict['a'] += 1
   ```
+
+[Go Back](javascript:history.go(-1))

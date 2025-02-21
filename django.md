@@ -237,3 +237,5 @@ With around [10](https://www.django-rest-framework.org/api-guide/viewsets/#model
 # Django-Ninja
 
 <i>Nothing to see here yet</i>
+
+[Go Back](javascript:history.go(-1))

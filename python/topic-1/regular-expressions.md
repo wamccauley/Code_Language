@@ -41,3 +41,5 @@ else:
   result = re.sub(r'\d+', '#', string)
   print(result)  # Output: The house number is # and the zip code is #.
   ```
+
+[Go Back](javascript:history.go(-1))

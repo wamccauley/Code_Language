@@ -84,3 +84,5 @@ print(fibonacci(10))  # Output: 55 (computed once, cached for subsequent calls)
 - **Improved Performance**: Reduces execution time and resource consumption.
 - **Scalability**: Enhances application scalability by optimizing memory usage.
 - **Stability**: Reduces the likelihood of memory leaks and runtime errors due to excessive resource consumption.
+
+[Go Back](javascript:history.go(-1))

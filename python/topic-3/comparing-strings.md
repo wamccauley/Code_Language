@@ -90,3 +90,5 @@
      if index != -1:
          print(f"'is' found at index {index}")
      ```
+
+[Go Back](javascript:history.go(-1))

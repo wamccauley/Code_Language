@@ -51,3 +51,5 @@ asyncio.run(main())
 - **Improved Efficiency**: Non-blocking operations allow other tasks to run while waiting for I/O.
 - **Scalability**: Handles large numbers of concurrent connections efficiently.
 - **Simplified Code**: Avoids callback-based programming with clearer syntax using `async` and `await`.
+
+[Go Back](javascript:history.go(-1))

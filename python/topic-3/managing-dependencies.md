@@ -129,3 +129,5 @@ To install the dependencies listed in `requirements.txt`, ensure your virtual en
 ```shell
 pip install -r requirements.txt
 ```
+
+[Go Back](javascript:history.go(-1))
