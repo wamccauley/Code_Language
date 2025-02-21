@@ -56,9 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 link.href = href; // URL from the index
                 link.textContent = `${breadcrumbs} > ${filename.replace('.html', '')}`;
-
-                // Add click listener to clear search input and results
-                link.addEventListener('click', function() {
+                 link.addEventListener('click', function() {
                     searchInput.value = '';  // Clear the search input
                     searchResults.innerHTML = ''; // Clear the search results
                 });
