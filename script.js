@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             results.forEach(function(result) {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
-               // Create URL before path and filename to text can populate for URL to generate
+
                 let href = result.ref;
                 let parts = href.split('/');
                 let filename = parts.pop();
@@ -56,6 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 link.href = href; // URL from the index
                 link.textContent = `${breadcrumbs} > ${filename.replace('.html', '')}`;
+
+                // Add click listener to clear search input and results
+                link.addEventListener('click', function() {
+                    searchInput.value = '';  // Clear the search input
+                    searchResults.innerHTML = ''; // Clear the search results
+                });
+
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
             });
