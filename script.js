@@ -50,8 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
             results.forEach(function(result) {
                 const listItem = document.createElement('li');
                 const link = document.createElement('a');
-                link.href = result.ref; // URL from the index
-                link.textContent = result.ref.split('/').pop(); // This splits the result and returns only the filename
+                  //link.href = result.ref; // URL from the index
+                let baseUrl = 'https://wamccauley.github.io/Code_Language/';  // Replace with your actual base URL
+                link.href = baseUrl + result.ref;
+                link.textContent = result.ref.split('/').pop().replace('.html', ''); // Show filename without extension
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
             });

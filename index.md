@@ -1,6 +1,8 @@
 # Code Language
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<base href="https://wamccauley.github.io/Code_Language/">
+
 
 <div id="search-container">
             <input type="text" id="search-input" placeholder="Search...">
